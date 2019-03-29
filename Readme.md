@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Анастасия Васинская](https://up.htmlacademy.ru/adaptive/16/user/811447).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Иовлев](https://htmlacademy.ru/profile/id200490).
 
 ---
 
