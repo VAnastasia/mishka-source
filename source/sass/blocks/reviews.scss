@@ -1,0 +1,39 @@
+.reviews {
+  padding-top: 26px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+}
+
+.reviews__title {
+ margin: 0;
+ margin-bottom: 24px;
+ @include font-bold;
+ @include font(25px, 30px, #000000);
+}
+
+.reviews__item {
+  margin: 0;
+  margin-right: 5px;
+  margin-bottom: 30px;
+  @include font-regular;
+  @include font(15px, 30px, #444444);
+}
+
+.reviews__author-name {
+  display: block;
+  margin-top: 26px;
+  margin-bottom: 3px;
+  @include font-bold;
+  @include font(17px, 24px, #000000);
+}
+
+.reviews__author-link {
+  text-decoration: none;
+  @include font-regular;
+  @include font(17px, 24px, #000000);
+}
+
+.reviews__write {
+  display: block;
+}

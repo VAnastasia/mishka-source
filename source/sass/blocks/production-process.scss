@@ -1,0 +1,45 @@
+.production-process {
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-bottom: 60px;
+  padding-top: 25px;
+  background-color: #ffffff;
+  border: 1px solid #ececec;
+
+  &:hover {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.production-process__title {
+  margin: 0;
+  margin-bottom: 23px;
+  margin-right: 30px;
+  margin-left: 90px;
+  @include font-bold;
+  @include font(17px, 24px, #000000);
+}
+
+.production-process__video {
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.production-process__description {
+  margin-bottom: 25px;
+  margin-left: 30px;
+  margin-right: 40px;
+  @include font-regular;
+  @include font(13px, 24px, #444444);
+}
+
+.production-process__order {
+  margin-left: 35px;
+  margin-bottom: 35px;
+  display: block;
+  width: 188px;
+}

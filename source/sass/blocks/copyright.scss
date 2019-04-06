@@ -1,0 +1,21 @@
+.copyright {
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
+.copyright__link {
+  text-decoration: none;
+}
+
+.copyright__text {
+  @include font-bold;
+  @include font(19px, 25px, #000000);
+
+  &:hover {
+    color: rgba($color: #000000, $alpha: 0.6);
+  }
+
+  &:active {
+    color: rgba($color: #000000, $alpha: 0.3);
+  }
+}
