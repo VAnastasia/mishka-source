@@ -8,7 +8,7 @@
 
 .form__fieldset--personal {
   padding-top: 30px;
-  padding-bottom: 0px;
+  padding-bottom: 0;
   margin-bottom: 10px;
 }
 
@@ -29,6 +29,7 @@
 .form__legend {
   padding: 0;
   margin: 0;
+
   @include font-bold;
   @include font(17px, 17px, #63d1bb);
   text-transform: uppercase;
@@ -87,6 +88,7 @@
   padding: 13px 0 14px 0;
   border: none;
   border-bottom: 2px solid #000000;
+
   @include font-regular;
   @include font(17px, 17px, #444444);
 
@@ -100,6 +102,7 @@
 
 .form__input-text--tel {
   padding: 14px 0;
+
   @include font(19px, 19px, #444444);
 }
 
@@ -113,6 +116,7 @@
   border: 2px solid #000000;
   min-height: 110px;
   max-width: 228px;
+
   @include font-regular;
   @include font(17px, 17px, #444444);
 
@@ -127,6 +131,7 @@
 .form__note {
   margin: 0;
   margin-bottom: 30px;
+
   @include font-regular;
   @include font(14px, 16px, #444444);
 }
@@ -137,6 +142,7 @@
 
 .form__label--radio {
   position: relative;
+
   &::before {
     position: absolute;
     content: "";
@@ -159,17 +165,18 @@
 
 .form__input-radio:checked + .form__label--radio::after {
   position: absolute;
-    content: "";
-    top: 5px;
-    left: -50px;
-    width: 16px;
-    height: 16px;
-    background-color: #61d1b9;
-    border-radius: 50%;
+  content: "";
+  top: 5px;
+  left: -50px;
+  width: 16px;
+  height: 16px;
+  background-color: #61d1b9;
+  border-radius: 50%;
 }
 
 .form__label--checkbox {
   position: relative;
+
   &::before {
     position: absolute;
     content: "";
@@ -191,13 +198,12 @@
 
 .form__input-checkbox:checked + .form__label--checkbox::after {
   position: absolute;
-    content: "";
-    top: 3px;
-    left: -53px;
-    width: 20px;
-    height: 8px;
-    border-left: 2px solid #000000;
-    border-bottom: 2px solid #000000;
-    transform: rotate(-45deg);
+  content: "";
+  top: 3px;
+  left: -53px;
+  width: 20px;
+  height: 8px;
+  border-left: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  transform: rotate(-45deg);
 }
-

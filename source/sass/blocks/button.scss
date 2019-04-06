@@ -1,16 +1,14 @@
 .button {
   padding: 0;
-  border: none;
-
   background-color: #ffffff;
   border: 2px solid #444444;
   width: 256px;
-
   padding-top: 14px;
   padding-bottom: 14px;
   font-size: 17px;
   line-height: 20px;
   color: #444444;
+
   @include font-bold;
   text-align: center;
   text-transform: uppercase;
@@ -26,4 +24,3 @@
     color: rgba($color: #ffffff, $alpha: 0.3);
   }
 }
-

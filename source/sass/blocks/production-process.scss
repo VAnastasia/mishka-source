@@ -7,11 +7,11 @@
   border: 1px solid #ececec;
 
   &:hover {
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
   }
 
   &:active {
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -20,6 +20,7 @@
   margin-bottom: 23px;
   margin-right: 30px;
   margin-left: 90px;
+
   @include font-bold;
   @include font(17px, 24px, #000000);
 }
@@ -33,6 +34,7 @@
   margin-bottom: 25px;
   margin-left: 30px;
   margin-right: 40px;
+
   @include font-regular;
   @include font(13px, 24px, #444444);
 }

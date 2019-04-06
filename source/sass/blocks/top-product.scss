@@ -7,6 +7,7 @@
 .top-product__title {
   margin: 0;
   margin-bottom: 5px;
+
   @include font-bold;
   @include font(25px, 30px, #000000);
 }
@@ -14,6 +15,7 @@
 .top-product__subtitle {
   margin: 0;
   margin-bottom: 24px;
+
   @include font-bold;
   @include font(17px, 20px, #63d1bb);
   text-transform: uppercase;
@@ -23,6 +25,7 @@
   margin-bottom: 30px;
   width: 100%;
   border-collapse: collapse;
+
   @include font(15px, 20px, #444444);
 }
 
@@ -48,6 +51,7 @@
 .top-product__price {
   margin: 0;
   margin-bottom: 26px;
+
   @include font-bold;
   @include font(17px, 24px, #444444);
   text-align: center;

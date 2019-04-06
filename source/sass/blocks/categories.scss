@@ -15,11 +15,11 @@
 .categories__text {
   display: block;
   width: 290px;
-  padding-right: 180px;
   padding: 0;
   padding-left: 30px;
   padding-top: 21px;
   padding-bottom: 21px;
+
   @include font-bold;
   @include font(19px, 24px, #ffffff);
   text-decoration: none;
