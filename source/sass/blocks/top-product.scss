@@ -1,7 +1,5 @@
 .top-product {
-  padding-top: 30px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 30px 30px 40px 30px;
 }
 
 .top-product__title {
@@ -9,7 +7,7 @@
   margin-bottom: 5px;
 
   @include font-bold;
-  @include font(25px, 30px, #000000);
+  @include font(25px, 30px, $color-black);
 }
 
 .top-product__subtitle {
@@ -17,7 +15,7 @@
   margin-bottom: 24px;
 
   @include font-bold;
-  @include font(17px, 20px, #63d1bb);
+  @include font(17px, 20px, $color-aqua);
   text-transform: uppercase;
 }
 
@@ -26,7 +24,7 @@
   width: 100%;
   border-collapse: collapse;
 
-  @include font(15px, 20px, #444444);
+  @include font(15px, 20px, $color-grey-dark);
 }
 
 .top-product__line {
@@ -53,11 +51,10 @@
   margin-bottom: 26px;
 
   @include font-bold;
-  @include font(17px, 24px, #444444);
+  @include font(17px, 24px, $color-grey-dark);
   text-align: center;
 }
 
 .top-product__order {
   display: block;
-  margin-bottom: 40px;
 }

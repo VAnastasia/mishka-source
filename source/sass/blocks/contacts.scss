@@ -10,7 +10,7 @@
   margin-right: 30px;
 
   @include font-bold;
-  @include font(18px, 30px, #000000);
+  @include font(18px, 30px, $color-black);
 }
 
 .contacts__list {
@@ -21,7 +21,7 @@
   border-collapse: collapse;
 
   @include font-regular;
-  @include font(15px, 30px, #000000);
+  @include font(15px, 30px, $color-grey-dark);
 }
 
 .contacts__field {
@@ -35,7 +35,7 @@
 }
 
 .contacts__email {
-  color: #444444;
+  color: $color-grey-dark;
   text-decoration: none;
   border-bottom: 1px solid #46c1ae;
 

@@ -1,8 +1,5 @@
 .reviews {
-  padding-top: 26px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 50px;
+  padding: 26px 30px 50px 30px;
 }
 
 .reviews__title {
@@ -10,7 +7,7 @@
   margin-bottom: 24px;
 
   @include font-bold;
-  @include font(25px, 30px, #000000);
+  @include font(25px, 30px, $color-black);
 }
 
 .reviews__item {
@@ -19,7 +16,7 @@
   margin-bottom: 30px;
 
   @include font-regular;
-  @include font(15px, 30px, #444444);
+  @include font(15px, 30px, $color-grey-dark);
 }
 
 .reviews__author-name {
@@ -28,14 +25,14 @@
   margin-bottom: 3px;
 
   @include font-bold;
-  @include font(17px, 24px, #000000);
+  @include font(17px, 24px, $color-black);
 }
 
 .reviews__author-link {
   text-decoration: none;
 
   @include font-regular;
-  @include font(17px, 24px, #000000);
+  @include font(17px, 30px, $color-black);
 }
 
 .reviews__write {

@@ -140,6 +140,27 @@
         </a>
       </div>
     </footer>
+    <section class="modal">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <p class="modal__description">Выберите размер:</p>
+      <form action="https://echo.htmlacademy.ru" method="POST">
+        <ul class="modal__list">
+          <li class="modal__item">
+            <input class="visually-hidden modal__input" type="radio" name="size" id="small" value="S" checked>
+            <label class="modal__label" for="small"><span class="visually-hidden">Маленький</span>S</label>
+          </li>
+          <li class="modal__item">
+            <input class="visually-hidden modal__input" type="radio" name="size" id="medium" value="M">
+            <label class="modal__label" for="medium"><span class="visually-hidden">Средний</span>M</label>
+          </li>
+          <li class="modal__item">
+            <input class="visually-hidden modal__input" type="radio" name="size" id="large" value="L">
+            <label class="modal__label" for="large"><span class="visually-hidden">Большой</span>L</label>
+          </li>
+        </ul>
+        <button class="button modal__button" type="submit">Добавить</button>
+      </form>
+    </section>
   </div>
   </body>
 </html>

@@ -1,8 +1,0 @@
-body {
-  padding: 0;
-  margin: 0;
-  background-color: #ffffff;
-
-  @include font-regular;
-  @include font(15px, 24px, #444444);
-}

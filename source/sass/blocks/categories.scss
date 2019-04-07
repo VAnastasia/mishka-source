@@ -4,11 +4,11 @@
 
 .categories__item {
   &:first-child {
-    background-color: #63d1bb;
+    background-color: $color-aqua;
   }
 
   &:last-child {
-    background-color: #55c3b2;
+    background-color: $color-aqua-dark;
   }
 }
 
@@ -21,14 +21,14 @@
   padding-bottom: 21px;
 
   @include font-bold;
-  @include font(19px, 24px, #ffffff);
+  @include font(19px, 24px, $color-white);
   text-decoration: none;
 
   &:hover {
-    color: rgba($color: #ffffff, $alpha: 0.6);
+    color: rgba($color: $color-white, $alpha: 0.6);
   }
 
   &:active {
-    color: rgba($color: #ffffff, $alpha: 0.3);
+    color: rgba($color: $color-white, $alpha: 0.3);
   }
 }
