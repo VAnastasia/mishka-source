@@ -11,8 +11,5 @@
   margin-left: 30px;
   margin-right: 30px;
   margin-bottom: 120px;
-
-  @include font-bold;
-  @include font(27px, 30px, #010000);
   text-align: center;
 }
