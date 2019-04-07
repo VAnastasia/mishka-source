@@ -1,0 +1,27 @@
+.advantages {
+  padding: 30px;
+}
+
+.advantages__title {
+  margin: 0;
+  margin-bottom: 35px;
+
+  @include font-bold;
+  @include font(25px, 30px, $color-black);
+}
+
+.advantages__list {
+  @include list-reset;
+}
+
+.advantages__item {
+  padding-top: 50px;
+  padding-bottom: 33px;
+
+  @include font-bold;
+  @include font(17px, 20px, $color-black);
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+}

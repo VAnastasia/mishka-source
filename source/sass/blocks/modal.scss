@@ -1,0 +1,64 @@
+.modal {
+  padding: 35px 30px 45px 30px;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+  border: 1px solid #c6c6c6;
+}
+
+.modal__title {
+  margin: 0;
+  margin-bottom: 15px;
+
+  @include font-bold;
+  @include font(25px, 30px, $color-black);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.modal__description {
+  margin: 0;
+  margin-bottom: 15px;
+
+  @include font-regular;
+  @include font(15px, 30px, $color-grey-dark);
+  text-align: center;
+}
+
+.modal__list {
+  @include list-reset;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal__label {
+  display: block;
+  padding: 15px 33px;
+
+  @include font-bold;
+  @include font(17px, 17px, $color-grey-dark);
+  text-transform: uppercase;
+  border: 2px solid $color-grey-light;
+  background-color: $color-white;
+
+  &:hover {
+    border: 2px solid rgba($color: $color-grey-dark, $alpha: 0.3);
+    background-color: $color-white;
+  }
+}
+
+.modal__input:checked + .modal__label {
+  border: 2px solid $color-aqua;
+}
+
+.modal__button {
+  width: 256px;
+  color: $color-white;
+  background-color: $color-aqua;
+  border: 2px solid $color-aqua;
+
+  &:hover,
+  &:active {
+    color: $color-aqua;
+    background-color: $color-white;
+  }
+}

@@ -1,0 +1,26 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: $color-white;
+
+  @include font-regular;
+  @include font(15px, 24px, $color-grey-dark);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.title {
+  @include font-bold;
+  @include font(27px, 30px, $color-black);
+}
