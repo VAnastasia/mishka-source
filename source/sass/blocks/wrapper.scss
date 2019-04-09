@@ -2,3 +2,15 @@
   margin: 0 auto;
   width: 320px;
 }
+
+@media (min-width: $width-medium) {
+  .wrapper {
+    width: $width-medium;
+  }
+}
+
+@media (min-width: $width-large) {
+  .wrapper {
+    width: $width-large;
+  }
+}

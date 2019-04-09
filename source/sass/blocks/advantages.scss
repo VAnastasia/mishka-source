@@ -25,3 +25,46 @@
     padding-bottom: 0;
   }
 }
+
+@media (min-width: $width-medium) {
+  .advantages {
+    padding: 60px 50px 50px 50px;
+  }
+
+  .advantages__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .advantages__item {
+    width: 300px;
+    padding-right: 30px;
+    font-size: 20px;
+    line-height: 22px;
+
+    &--handmade {
+      order: 2;
+    }
+
+    &--cheap {
+      order: 3;
+    }
+
+    &--support {
+      order: 4;
+    }
+
+    &--like {
+      order: 5;
+    }
+
+    &--gift {
+      order: 6;
+    }
+  }
+}

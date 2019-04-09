@@ -1,4 +1,5 @@
 body {
+  min-width: $width-small;
   padding: 0;
   margin: 0;
   background-color: $color-white;
@@ -20,7 +21,22 @@ body {
   overflow: hidden;
 }
 
-.title {
+.heading-inner-main {
   @include font-bold;
   @include font(27px, 30px, $color-black);
+}
+
+
+@media (min-width: $width-medium) {
+  .heading-inner-main {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $width-large) {
+  .heading-inner-main {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

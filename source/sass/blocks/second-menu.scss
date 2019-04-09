@@ -1,0 +1,22 @@
+.second-menu {
+  display: none;
+}
+
+@media (min-width: $width-large) {
+  .second-menu {
+    display: flex;
+
+    @include list-reset;
+    padding: 15px 0 15px 50px;
+  }
+
+  .second-menu__item {
+    margin-right: 60px;
+  }
+
+  .second-menu__link {
+    @include font-bold;
+    @include font(15px, 24px, $color-black);
+    text-decoration: none;
+  }
+}

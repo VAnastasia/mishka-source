@@ -21,3 +21,46 @@
     color: rgba($color: $color-black, $alpha: 0.3);
   }
 }
+
+@media (min-width: $width-medium) {
+  .site-list {
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    min-height: 60px;
+    width: 350px;
+  }
+
+  .site-list__link {
+    padding: 0;
+    margin-right: 35px;
+    font-size: 15px;
+    box-shadow: none;
+  }
+}
+
+@media (min-width: $width-large) {
+  .site-list {
+    width: 450px;
+    order: -1;
+    position: static;
+    padding: 0;
+    padding-left: 15px;
+  }
+
+  .site-list__item:first-child {
+    border-right: 1px solid $color-grey-light;
+  }
+
+  .site-list__link {
+    padding: 35px;
+    margin: 0;
+    font-size: 17px;
+    min-height: auto;
+  }
+}

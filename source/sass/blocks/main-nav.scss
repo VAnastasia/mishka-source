@@ -1,5 +1,38 @@
+.main-nav {
+  background-color: $color-white;
+}
+
 .main-nav__toggle {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+@media (min-width: $width-medium) {
+  .main-nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 0 $color-grey-light;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $width-large) {
+  .main-nav {
+    position: relative;
+    //height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 0 $color-grey-light;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
 }

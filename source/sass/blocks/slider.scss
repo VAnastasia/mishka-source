@@ -10,3 +10,9 @@
   height: 50px;
   cursor: pointer;
 }
+
+@media (min-width: $width-medium) {
+  .slider__toggle {
+    width: 85px;
+  }
+}

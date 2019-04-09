@@ -38,3 +38,41 @@
 .reviews__write {
   display: block;
 }
+
+@media (min-width: $width-medium) {
+  .reviews {
+    position: relative;
+    padding: 85px 50px 65px 50px;
+    background-image: url("../img/review@1x.jpg");
+    background-position: left top;
+    background-repeat: no-repeat;
+  }
+
+  .reviews__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 50px;
+  }
+
+  .reviews__item {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .reviews__author-name {
+    margin-top: 50px;
+  }
+
+  .reviews__write {
+    position: absolute;
+    top: 85px;
+    right: 50px;
+    width: 170px;
+  }
+
+  .reviews__toggles {
+    position: absolute;
+    bottom: 65px;
+    right: 50px;
+  }
+}
