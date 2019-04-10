@@ -39,7 +39,7 @@
   display: block;
 }
 
-@media (min-width: $width-medium) {
+@media (min-width: $width-tablet) {
   .reviews {
     position: relative;
     padding: 85px 50px 65px 50px;
@@ -77,7 +77,7 @@
   }
 }
 
-@media (min-width: $width-large) {
+@media (min-width: $width-desktop) {
   .reviews {
     padding: 80px 50px 65px 225px;
   }

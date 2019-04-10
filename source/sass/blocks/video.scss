@@ -9,7 +9,7 @@
   transform: translate(-50%, -50%);
 }
 
-@media (min-width: $width-medium) {
+@media (min-width: $width-tablet) {
   .video {
     position: absolute;
     width: 668px;
@@ -22,7 +22,7 @@
   }
 }
 
-@media (min-width: $width-large) {
+@media (min-width: $width-desktop) {
   .video {
     width: 682px;
   }

@@ -33,7 +33,7 @@
   }
 }
 
-@media (min-width: $width-medium) {
+@media (min-width: $width-tablet) {
   .categories {
     display: flex;
     justify-content: center;
@@ -48,7 +48,7 @@
   }
 }
 
-@media (min-width: $width-large) {
+@media (min-width: $width-desktop) {
   .categories__text {
     width: 490px;
   }

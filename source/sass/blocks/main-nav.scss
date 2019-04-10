@@ -8,7 +8,7 @@
   right: 0;
 }
 
-@media (min-width: $width-medium) {
+@media (min-width: $width-tablet) {
   .main-nav {
     padding: 0 50px;
     position: relative;
@@ -23,7 +23,7 @@
   }
 }
 
-@media (min-width: $width-large) {
+@media (min-width: $width-desktop) {
   .main-nav {
     padding: 0;
     padding-right: 50px;

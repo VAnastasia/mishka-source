@@ -11,7 +11,7 @@
   cursor: pointer;
 }
 
-@media (min-width: $width-medium) {
+@media (min-width: $width-tablet) {
   .slider__toggle {
     width: 85px;
   }

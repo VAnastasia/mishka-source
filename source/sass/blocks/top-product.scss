@@ -59,7 +59,7 @@
   display: block;
 }
 
-@media (min-width: $width-medium) {
+@media (min-width: $width-tablet) {
   .top-product {
     position: relative;
     padding: 40px 50px 50px 50px;
@@ -111,7 +111,7 @@
   }
 }
 
-@media (min-width: $width-large) {
+@media (min-width: $width-desktop) {
   .top-product {
     padding: 120px 50px 70px 50px;
   }

@@ -66,19 +66,22 @@
   }
 }
 
-@media (min-width: $width-medium) {
+@media (min-width: $width-tablet) {
   .modal {
-    padding: 30px 80px 45px 80px;
-    width: 400px;
+    padding: 30px 100px 45px 100px;
+    width: 360px;
   }
 
   .modal__form {
-    margin: 0 auto;
+    width: 350px;
+  }
+
+  .modal__list {
     width: 350px;
   }
 
   .modal__button {
-    width: 346px;
+    width: 350px;
   }
 
   .modal__title {

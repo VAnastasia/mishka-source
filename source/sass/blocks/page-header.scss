@@ -6,7 +6,7 @@
   display: none;
 }
 
-@media (min-width: $width-medium) {
+@media (min-width: $width-tablet) {
   .page-header {
     background-color: #f9f9f9;
   }
@@ -27,7 +27,7 @@
   }
 }
 
-@media (min-width: $width-large) {
+@media (min-width: $width-desktop) {
   .page-header__container {
     display: flex;
     justify-content: space-between;

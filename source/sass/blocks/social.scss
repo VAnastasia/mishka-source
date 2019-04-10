@@ -10,7 +10,7 @@
   @include list-reset;
 }
 
-@media (min-width: $width-medium) {
+@media (min-width: $width-tablet) {
   .social {
     padding: 0;
     border: none;

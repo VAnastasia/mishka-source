@@ -65,7 +65,7 @@
   border-top: 1px solid $color-grey-light;
 }
 
-@media (min-width: $width-medium) {
+@media (min-width: $width-tablet) {
   .product {
     width: 668px;
     display: flex;
@@ -109,7 +109,7 @@
   }
 }
 
-@media (min-width: $width-large) {
+@media (min-width: $width-desktop) {
   .product {
     display: block;
     width: 316px;

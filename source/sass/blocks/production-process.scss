@@ -47,7 +47,7 @@
   width: 188px;
 }
 
-@media (min-width: $width-medium) {
+@media (min-width: $width-tablet) {
   .production-process {
     position: relative;
     margin: 500px 50px 65px 50px;
@@ -82,7 +82,7 @@
   }
 }
 
-@media (min-width: $width-large) {
+@media (min-width: $width-desktop) {
   .production-process {
     margin: 0;
     margin-bottom: 105px;

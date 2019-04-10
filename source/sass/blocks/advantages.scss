@@ -26,7 +26,7 @@
   }
 }
 
-@media (min-width: $width-medium) {
+@media (min-width: $width-tablet) {
   .advantages {
     padding: 60px 50px 50px 50px;
   }
@@ -69,7 +69,7 @@
   }
 }
 
-@media (min-width: $width-large) {
+@media (min-width: $width-desktop) {
   .advantages {
     padding: 70px 225px;
   }

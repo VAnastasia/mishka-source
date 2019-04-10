@@ -27,14 +27,14 @@ body {
 }
 
 
-@media (min-width: $width-medium) {
+@media (min-width: $width-tablet) {
   .heading-inner-main {
     font-size: 43px;
     line-height: 50px;
   }
 }
 
-@media (min-width: $width-large) {
+@media (min-width: $width-desktop) {
   .heading-inner-main {
     font-size: 53px;
     line-height: 57px;

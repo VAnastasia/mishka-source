@@ -3,13 +3,13 @@
   width: 320px;
 }
 
-@media (min-width: $width-medium) {
+@media (min-width: $width-tablet) {
   .wrapper {
     width: $width-medium;
   }
 }
 
-@media (min-width: $width-large) {
+@media (min-width: $width-desktop) {
   .wrapper {
     width: $width-large;
   }

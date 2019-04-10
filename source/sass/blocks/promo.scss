@@ -14,7 +14,7 @@
   text-align: center;
 }
 
-@media (min-width: $width-medium) {
+@media (min-width: $width-tablet) {
   .promo {
     padding-top: 105px;
     background-image: url("../img/hero-tablet@1x.jpg");
@@ -29,7 +29,7 @@
   }
 }
 
-@media (min-width: $width-large) {
+@media (min-width: $width-desktop) {
   .promo {
     padding-top: 105px;
     background-image: url("../img/hero-desktop@1x.jpg");

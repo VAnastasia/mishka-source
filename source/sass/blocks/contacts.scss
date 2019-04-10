@@ -62,7 +62,7 @@
   margin: 0 auto;
 }
 
-@media (min-width: $width-medium) {
+@media (min-width: $width-tablet) {
   .contacts {
     padding-top: 70px;
     padding-bottom: 55px;
@@ -102,7 +102,7 @@
   }
 }
 
-@media (min-width: $width-large) {
+@media (min-width: $width-desktop) {
   .contacts {
     position: relative;
     width: 350px;
@@ -132,6 +132,7 @@
 
   .contacts__write {
     width: 230px;
+    margin: 0;
   }
 
   .contacts__map {
@@ -145,9 +146,5 @@
 
   .contacts__map-image {
     width: 525px;
-  }
-
-  .contacts__write {
-    margin: 0;
   }
 }
