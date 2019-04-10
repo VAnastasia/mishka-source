@@ -8,6 +8,10 @@
   box-shadow: 0 1px 0 $color-grey-light;
 }
 
+.logo--footer {
+  display: none;
+}
+
 .logo__image {
   margin: 0;
   padding: 0;
@@ -16,9 +20,15 @@
 @media (min-width: $width-medium) {
   .logo {
     width: 320px;
-    padding: 0 0 0 50px;
+    padding: 0;
     text-align: left;
     box-shadow: none;
+  }
+
+  .logo--footer {
+    display: block;
+    width: auto;
+
   }
 }
 

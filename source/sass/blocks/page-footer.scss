@@ -3,3 +3,12 @@
   padding-right: 30px;
   background-color: #f1f1f1;
 }
+
+@media (min-width: $width-medium) {
+  .page-footer {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

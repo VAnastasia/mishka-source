@@ -18,3 +18,29 @@
   @include font-regular;
   @include font(13px, 24px, $color-grey-dark);
 }
+
+@media (min-width: $width-medium) {
+  .order__wrapper {
+    padding: 0;
+  }
+
+  .order__title {
+    padding-top: 40px;
+    padding-bottom: 80px;
+    margin-bottom: 80px;
+  }
+
+  .order__intro {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: $width-large) {
+  .order__title {
+    padding-top: 40px;
+    padding-bottom: 100px;
+    margin-bottom: 130px;
+  }
+}

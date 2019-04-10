@@ -11,7 +11,7 @@
   <div class="wrapper">
     <header class="page-header page-header--inner">
       <nav class="main-nav">
-        <a class="logo" href="index.html">
+        <a class="main-nav__logo logo" href="index.html">
           <img class="logo__image" src="img/logo-mobile.svg" alt="Мишка">
         </a>
         <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -55,38 +55,43 @@
             <a class="product__image-link" href="#">
               <img class="product__image" src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик">
             </a>
-            <h2 class="product__title">
-              <a class="product__link" href="#">Зайчик-попрыгайчик</a>
-            </h2>
-            <p class="product__description">Рост 30 см, вес 200 г</p>
-            <p class="product__price">1200 руб.
-              <a class="product__buy" href="#">В корзину</a>
-            </p>
-
+            <div class="product__container">
+              <h2 class="product__title">
+                <a class="product__link" href="#">Зайчик-попрыгайчик</a>
+              </h2>
+              <p class="product__description">Рост 30 см, вес 200 г</p>
+              <p class="product__price">1200 руб.
+                <a class="product__buy" href="#">В корзину</a>
+              </p>
+            </div>
           </li>
           <li class="catalog__item product">
             <a class="product__image-link" href="#">
               <img class="product__image" src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья">
             </a>
-            <h2 class="product__title">
-              <a class="product__link" href="#">Корзинка для белья</a>
-            </h2>
-            <p class="product__description">Диаметр 15 см, высота 10 см</p>
-            <p class="product__price">690 руб.
-              <a class="product__buy" href="#">В корзину</a>
-            </p>
+            <div class="product__container">
+              <h2 class="product__title">
+                <a class="product__link" href="#">Корзинка для белья</a>
+              </h2>
+              <p class="product__description">Диаметр 15 см, высота 10 см</p>
+              <p class="product__price">690 руб.
+                <a class="product__buy" href="#">В корзину</a>
+              </p>
+            </div>
           </li>
           <li class="catalog__item product">
             <a class="product__image-link" href="#">
               <img class="product__image" src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек">
             </a>
-            <h2 class="product__title">
-              <a class="product__link" href="#">Большая корзинка для игрушек</a>
-            </h2>
-            <p class="product__description">Диаметр 30 см, высота 30 см</p>
-            <p class="product__price">1500 руб.
-              <a class="product__buy" href="#">В корзину</a>
-            </p>
+            <div class="product__container">
+              <h2 class="product__title">
+                <a class="product__link" href="#">Большая корзинка для игрушек</a>
+              </h2>
+              <p class="product__description">Диаметр 30 см, высота 30 см</p>
+              <p class="product__price">1500 руб.
+                <a class="product__buy" href="#">В корзину</a>
+              </p>
+            </div>
           </li>
         </ul>
       </div>
@@ -102,6 +107,9 @@
     </article>
   </main>
   <footer class="page-footer">
+    <a class="page-footer__logo logo logo--footer">
+      <img class="logo__image" src="img/logo-footer.svg" alt="Мишка">
+    </a>
     <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">

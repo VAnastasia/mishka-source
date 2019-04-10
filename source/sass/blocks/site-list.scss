@@ -47,10 +47,9 @@
 @media (min-width: $width-large) {
   .site-list {
     width: 450px;
-    order: -1;
+    //order: 1;
     position: static;
     padding: 0;
-    padding-left: 15px;
   }
 
   .site-list__item:first-child {

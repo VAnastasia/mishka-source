@@ -47,3 +47,9 @@
     line-height: 30px;
   }
 }
+
+@media (min-width: $width-large) {
+  .categories__text {
+    width: 490px;
+  }
+}

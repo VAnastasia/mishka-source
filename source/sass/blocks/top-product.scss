@@ -100,6 +100,7 @@
     bottom: 50px;
     margin: 0;
     width: 333px;
+    z-index: -1;
   }
 
   .top-product__price {
@@ -107,5 +108,41 @@
     font-size: 20px;
     text-align: left;
     margin-left: 75px;
+  }
+}
+
+@media (min-width: $width-large) {
+  .top-product {
+    padding: 120px 50px 70px 50px;
+  }
+
+  .top-product__title {
+    margin-left: 175px;
+    margin-bottom: 45px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .top-product__image {
+    right: 50px;
+    bottom: 70px;
+    width: 525px;
+  }
+
+  .top-product__description {
+    margin-bottom: 55px;
+  }
+
+  .top-product__container {
+    margin-left: 175px;
+  }
+
+  .top-product__list {
+    margin-bottom: 100px;
+  }
+
+  .top-product__subtitle {
+    top: 130px;
+    left: 50px;
   }
 }

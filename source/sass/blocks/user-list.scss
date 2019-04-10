@@ -27,10 +27,11 @@
   .user-list {
     display: flex;
     align-items: center;
+    order: 2;
   }
 
   .user-list__cart {
-    padding: 0 50px 0 80px;
+    padding: 0 0 0 80px;
     box-shadow: none;
   }
 

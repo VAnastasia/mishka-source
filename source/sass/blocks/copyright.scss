@@ -19,3 +19,10 @@
     color: rgba($color: $color-black, $alpha: 0.3);
   }
 }
+
+@media (min-width: $width-medium) {
+  .copyright {
+    padding: 0;
+    width: 195px;
+  }
+}

@@ -10,6 +10,7 @@
 
 @media (min-width: $width-medium) {
   .main-nav {
+    padding: 0 50px;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -24,12 +25,18 @@
 
 @media (min-width: $width-large) {
   .main-nav {
+    padding: 0;
+    padding-right: 50px;
+    padding-left: 15px;
     position: relative;
-    //height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 1px 0 $color-grey-light;
+  }
+
+  .main-nav__logo {
+    order: 2;
   }
 
   .main-nav__toggle {

@@ -76,3 +76,14 @@
     right: 50px;
   }
 }
+
+@media (min-width: $width-large) {
+  .reviews {
+    padding: 80px 50px 65px 225px;
+  }
+
+  .reviews__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

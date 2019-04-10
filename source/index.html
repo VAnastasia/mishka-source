@@ -11,7 +11,7 @@
   <div class="wrapper">
     <header class="page-header">
       <nav class="main-nav">
-        <a class="logo">
+        <a class="main-nav__logo logo">
           <img class="logo__image" src="img/logo-mobile.svg" alt="Мишка">
         </a>
         <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -139,6 +139,9 @@
       </section>
     </main>
     <footer class="page-footer">
+      <a class="page-footer__logo logo logo--footer">
+        <img class="logo__image" src="img/logo-footer.svg" alt="Мишка">
+      </a>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
@@ -151,7 +154,7 @@
             <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru" target="_blank">Мы в Твиттере</a>
           </li>
         </ul>
-        </div>
+      </div>
       <div class="page-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
           <b class="copyright__text">Разработано:</b>
@@ -162,7 +165,7 @@
     <section class="modal">
       <h2 class="modal__title">Добавить в корзину</h2>
       <p class="modal__description">Выберите размер:</p>
-      <form action="https://echo.htmlacademy.ru" method="POST">
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="POST">
         <ul class="modal__list">
           <li class="modal__item">
             <input class="visually-hidden modal__input" type="radio" name="size" id="small" value="S" checked>

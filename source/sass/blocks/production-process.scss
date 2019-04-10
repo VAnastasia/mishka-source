@@ -3,6 +3,7 @@
   margin-left: 30px;
   margin-bottom: 60px;
   padding-top: 25px;
+  width: 260px;
   background-color: $color-white;
   border: 1px solid $color-grey-light;
 
@@ -44,4 +45,71 @@
   margin-bottom: 35px;
   display: block;
   width: 188px;
+}
+
+@media (min-width: $width-medium) {
+  .production-process {
+    position: relative;
+    margin: 500px 50px 65px 50px;
+    padding: 40px 40px 45px 40px;
+    width: 588px;
+  }
+
+  .production-process__title {
+    font-size: 20px;
+    margin: 0;
+    margin-left: 65px;
+    margin-bottom: 40px;
+  }
+
+  .production-process__video {
+    margin: 0;
+    position: absolute;
+    top: -445px;
+    left: 0;
+  }
+
+  .production-process__description {
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .production-process__order {
+    margin: 0;
+    width: 584px;
+  }
+}
+
+@media (min-width: $width-large) {
+  .production-process {
+    margin: 0;
+    margin-bottom: 105px;
+    margin-left: 50px;
+    padding: 0;
+    padding-left: 760px;
+    padding-right: 58px;
+    padding-top: 100px;
+    width: 230px;
+    min-height: 355px;
+  }
+
+  .production-process__title {
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+  .production-process__video {
+    top: 0;
+  }
+
+  .production-process__description {
+    margin-bottom: 50px;
+  }
+
+  .production-process__order {
+    width: 226px;
+    margin-bottom: 30px;
+  }
 }

@@ -215,3 +215,9 @@
   border-bottom: 2px solid $color-black;
   transform: rotate(-45deg);
 }
+
+@media (min-width: $width-medium) {
+  fieldset {
+    box-shadow: 0 0 0 1px blue;
+  }
+}
