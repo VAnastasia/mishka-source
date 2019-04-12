@@ -2,7 +2,8 @@
   @include list-reset;
 }
 
-.user-list__cart {
+.user-list__cart,
+.user-list__search {
   display: block;
   padding-top: 28px;
   padding-bottom: 28px;
@@ -19,5 +20,32 @@
 
   &[href]:active {
     color: rgba($color: $color-black, $alpha: 0.3);
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .user-list {
+    display: flex;
+    align-items: center;
+    order: 2;
+  }
+
+  .user-list__cart {
+    padding: 0 0 0 80px;
+    box-shadow: none;
+  }
+
+  .user-list__search {
+    padding: 0;
+    width: 84px;
+    height: 88px;
+    border-left: 1px solid $color-grey-light;
+    border-right: 1px solid $color-grey-light;
+    box-shadow: none;
+    cursor: pointer;
+  }
+
+  .user-list__search-text {
+    display: none;
   }
 }

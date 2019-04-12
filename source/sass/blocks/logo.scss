@@ -1,0 +1,40 @@
+.logo {
+  margin: 0;
+  padding: 0;
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  box-shadow: 0 1px 0 $color-grey-light;
+}
+
+.logo--footer {
+  display: none;
+}
+
+.logo__image {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: $width-tablet) {
+  .logo {
+    width: 320px;
+    padding: 0;
+    text-align: left;
+    box-shadow: none;
+  }
+
+  .logo--footer {
+    display: block;
+    width: auto;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .logo {
+    width: auto;
+    padding: 0;
+    text-align: center;
+  }
+}

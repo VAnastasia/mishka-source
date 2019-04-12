@@ -1,5 +1,45 @@
+.main-nav {
+  background-color: $color-white;
+}
+
 .main-nav__toggle {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+@media (min-width: $width-tablet) {
+  .main-nav {
+    padding: 0 50px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 0 $color-grey-light;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .main-nav {
+    padding: 0;
+    padding-right: 50px;
+    padding-left: 15px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 0 $color-grey-light;
+  }
+
+  .main-nav__logo {
+    order: 2;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
 }

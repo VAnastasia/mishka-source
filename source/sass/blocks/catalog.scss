@@ -18,3 +18,36 @@
 .catalog__item {
   margin-bottom: 32px;
 }
+
+@media (min-width: $width-tablet) {
+  .catalog__title {
+    padding-top: 40px;
+    padding-bottom: 80px;
+    margin-bottom: 80px;
+  }
+
+  .catalog__wrapper {
+    padding: 0 50px;
+  }
+
+  .catalog__item {
+    margin-bottom: 55px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .catalog__title {
+    padding-top: 40px;
+    padding-bottom: 100px;
+    margin-bottom: 130px;
+  }
+
+  .catalog__wrapper {
+    padding: 0 50px;
+  }
+
+  .catalog__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}

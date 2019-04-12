@@ -3,11 +3,11 @@
 }
 
 .categories__item {
-  &:first-child {
+  &--interior {
     background-color: $color-aqua;
   }
 
-  &:last-child {
+  &--toy {
     background-color: $color-aqua-dark;
   }
 }
@@ -30,5 +30,26 @@
 
   &:active {
     color: rgba($color: $color-white, $alpha: 0.3);
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .categories {
+    display: flex;
+    justify-content: center;
+  }
+
+  .categories__text {
+    display: block;
+    width: 300px;
+    padding: 35px 0 35px 35px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .categories__text {
+    width: 490px;
   }
 }

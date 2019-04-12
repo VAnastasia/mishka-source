@@ -9,3 +9,11 @@
 
   @include list-reset;
 }
+
+@media (min-width: $width-tablet) {
+  .social {
+    padding: 0;
+    border: none;
+    width: 150px;
+  }
+}
