@@ -5,12 +5,12 @@
 
 @media (min-width: $width-tablet) {
   .wrapper {
-    width: $width-medium;
+    width: $width-tablet;
   }
 }
 
 @media (min-width: $width-desktop) {
   .wrapper {
-    width: $width-large;
+    width: $width-desktop;
   }
 }
