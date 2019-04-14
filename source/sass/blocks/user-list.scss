@@ -81,3 +81,9 @@
     left: 33px;
   }
 }
+
+@media (min-width: $width-desktop) {
+  .user-list {
+    margin-left: 70px;;
+  }
+}

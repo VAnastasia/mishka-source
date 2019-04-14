@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-  <div class="wrapper">
     <header class="page-header">
       <nav class="main-nav main-nav--closed main-nav--nojs">
+        <div class="main-nav__container">
         <a class="main-nav__logo logo">
           <picture>
             <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
@@ -44,8 +44,9 @@
               Корзина: пока пуста</a>
           </li>
         </ul>
+      </div>
       </nav>
-      <div class="page-header__container">
+      <div class="page-header__container wrapper">
         <ul class="second-menu">
           <li class="second-menu__item">
             <a class="second-menu__link" href="#">Новые поступления</a>
@@ -59,6 +60,7 @@
     </header>
     <main class="page-main">
       <section class="promo">
+        <div class="wrapper">
         <h1 class="heading-inner-main promo__title">Милые штуки ручной работы для дома</h1>
         <ul class="promo__list categories">
           <li class="categories__item categories__item--interior">
@@ -68,7 +70,9 @@
             <a class="categories__text" href="#">Детские<br> игрушки</a>
           </li>
         </ul>
+        </div>
       </section>
+      <div class="wrapper">
       <section class="top-product">
         <h2 class="top-product__title">Вязаные корзинки</h2>
         <h3 class="top-product__subtitle">Товар недели</h3>
@@ -129,7 +133,9 @@
           <a href="#" class="button reviews__write">Написать</a>
         </div>
       </section>
+      </div>
       <section class="contacts">
+        <div class="contacts__container">
         <h2 class="contacts__title">Контакты</h2>
         <table class="contacts__list">
           <tbody class="contacts__table">
@@ -147,6 +153,7 @@
             </tr>
           </tbody>
         </table>
+        </div>
         <p class="contacts__map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002815!2d30.320858715677197!3d59.93871916905466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1555241681738!5m2!1sru!2sru" frameborder="0" style="border:0" allowfullscreen></iframe>
           <picture>
@@ -159,6 +166,7 @@
       </section>
     </main>
     <footer class="page-footer">
+      <div class="page-footer__container">
       <a class="page-footer__logo logo logo--footer">
         <svg class="logo__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="101.615px" height="34.056px" viewBox="0 0 101.615 34.056" enable-background="new 0 0 101.615 34.056" xml:space="preserve">
           <g>
@@ -221,6 +229,7 @@
           <span class="visually-hidden">HTML Academy</span>
         </a>
       </div>
+      </div>
     </footer>
     <section class="modal">
       <h2 class="modal__title">Добавить в корзину</h2>
@@ -243,7 +252,6 @@
         <button class="button modal__button" type="submit">Добавить</button>
       </form>
     </section>
-  </div>
   <script src="js/menu-mobile.js"></script>
   </body>
 </html>
