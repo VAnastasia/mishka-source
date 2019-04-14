@@ -1,10 +1,16 @@
 .copyright {
   padding-top: 27px;
   padding-bottom: 27px;
+  display: flex;
+  justify-content: center;
 }
 
 .copyright__link {
   text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 185px;
 }
 
 .copyright__text {
@@ -17,6 +23,22 @@
 
   &:active {
     color: rgba($color: $color-black, $alpha: 0.3);
+  }
+}
+
+.copyright__icon {
+  path {
+    fill: $color-aqua;
+  }
+
+  &:hover path,
+  &:focus path {
+    fill: #45c1ae;
+  }
+
+  &:active {
+    fill: #45c1ae;
+    opacity: 0.3;
   }
 }
 

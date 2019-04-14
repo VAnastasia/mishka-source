@@ -6,6 +6,14 @@
   padding-bottom: 20px;
   text-align: center;
   box-shadow: 0 1px 0 $color-grey-light;
+
+  &[href]:hover {
+    opacity: 0.6;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
 }
 
 .logo--footer {
@@ -28,6 +36,18 @@
   .logo--footer {
     display: block;
     width: auto;
+  }
+
+  .logo[href] .logo__icon {
+    &:hover path,
+    &:focus path {
+      fill: #45c1ae;
+    }
+
+    &:active {
+      fill: #45c1ae;
+      opacity: 0.3;
+    }
   }
 }
 

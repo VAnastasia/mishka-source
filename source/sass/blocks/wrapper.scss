@@ -1,6 +1,6 @@
 .wrapper {
   margin: 0 auto;
-  width: 320px;
+  width: $width-mobile;
 }
 
 @media (min-width: $width-tablet) {
