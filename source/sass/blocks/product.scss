@@ -65,6 +65,31 @@
   border-top: 1px solid $color-grey-light;
 }
 
+.product__buy {
+  position: relative;
+}
+
+.product__icon-cart {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+
+  path {
+    fill: #d3d2d2;
+  }
+
+  &:hover path,
+  &:focus path {
+    fill: $color-aqua;
+  }
+
+  &:active path {
+    fill: $color-aqua;
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: $width-tablet) {
   .product {
     width: 668px;

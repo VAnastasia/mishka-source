@@ -27,15 +27,17 @@
 
 @media (min-width: $width-tablet) {
   .logo {
-    width: 320px;
+    width: auto;
     padding: 0;
+    padding-top: 5px;
     text-align: left;
     box-shadow: none;
   }
 
   .logo--footer {
+    padding-top: 0;
     display: block;
-    width: 195px;
+    width: 180px;
   }
 
   .logo[href] .logo__icon {
@@ -55,10 +57,13 @@
   .logo {
     width: auto;
     padding: 0;
+    padding-top: 5px;
     text-align: center;
   }
 
   .logo--footer {
-    width: 195px;
+    padding: 0;
+    width: 185px;
+    text-align: left;
   }
 }

@@ -3,7 +3,7 @@
   padding: 26px 30px 50px 30px;
   background-color: $color-white;
 
-  &:after {
+  &::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -57,12 +57,12 @@
 @media (min-width: $width-tablet) {
   .reviews {
     position: relative;
-    padding: 85px 50px 65px 50px;
+    padding: 80px 50px 100px 50px;
     background-image: url("../img/review@1x.jpg");
     background-position: left top;
     background-repeat: no-repeat;
 
-    &:after {
+    &::after {
       height: 17px;
     }
   }
@@ -74,33 +74,35 @@
   }
 
   .reviews__item {
+    padding-right: 50px;
     font-size: 17px;
     line-height: 30px;
   }
 
   .reviews__author-name {
-    margin-top: 50px;
+    margin-top: 55px;
   }
 
   .reviews__write {
     position: absolute;
-    top: 85px;
+    top: 80px;
     right: 50px;
     width: 170px;
   }
 
   .reviews__toggles {
     position: absolute;
-    bottom: 65px;
+    bottom: 95px;
     right: 50px;
   }
 }
 
 @media (min-width: $width-desktop) {
   .reviews {
-    padding: 80px 50px 165px 225px;
+    padding: 70px 50px 160px 225px;
+    background-position: left 50px top;
 
-    &:after {
+    &::after {
       height: 23px;
     }
   }
@@ -110,9 +112,17 @@
     line-height: 57px;
   }
 
+  .reviews__author-name {
+    margin-top: 37px;
+  }
+
+  .reviews__write {
+    top: 78px;
+  }
+
   .reviews__toggles {
     position: absolute;
-    bottom: 165px;
+    bottom: 155px;
     right: 50px;
   }
 }

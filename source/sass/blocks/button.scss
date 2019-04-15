@@ -12,7 +12,8 @@
   text-transform: uppercase;
   text-decoration: none;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $color-grey-dark;
     color: $color-white;
   }

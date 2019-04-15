@@ -61,9 +61,8 @@
 <main class="page-main">
   <section class="order">
     <h1 class="heading-inner-main order__title">Вязание на заказ</h1>
-    <div class="order__wrapper">
       <p class="order__intro">
-        Мы будем рады воплотить в жизнь ваши пожелания! Зполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+        Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
       </p>
       <form class="order__form form" action="https://echo.htmlacademy.ru" method="POST">
         <fieldset class="form__fieldset">
@@ -77,6 +76,7 @@
             <label class="form__label form__label--radio" for="toys">Детская игрушка</label>
           </p>
         </fieldset>
+        <div class="form__wrapper">
         <fieldset class="form__fieldset form__fieldset--color">
           <legend class="form__legend">Цвет</legend>
           <div class="form__container">
@@ -106,6 +106,7 @@
             </p>
           </div>
         </fieldset>
+        </div>
         <fieldset class="form__fieldset form__fieldset--personal">
           <legend class="form__legend form__legend--personal">ФИО</legend>
           <p class="form__text">
@@ -121,6 +122,7 @@
             <input class="form__input-text" type="text" id="patronymic" name="patronymic" placeholder="Отчество, если желаете">
           </p>
         </fieldset>
+        <div class="form__wrapper">
         <fieldset class="form__fieldset form__fieldset--tel">
           <legend class="form__legend form__legend--tel">Тел</legend>
           <p class="form__text form__text--tel">
@@ -135,6 +137,7 @@
             <input class="form__input-text form__input-text--email" type="email" id="email" name="email" placeholder="Ваш Email*" required>
           </p>
         </fieldset>
+        </div>
         <fieldset class="form__fieldset form__fieldset--more">
           <legend class="form__legend form__legend--more">Доп</legend>
           <p class="form__text form__text--textarea">
@@ -147,7 +150,6 @@
           <button class="button form__button" type="submit">Отправить заказ</button>
         </div>
       </form>
-    </div>
   </section>
 </main>
 <footer class="page-footer">
