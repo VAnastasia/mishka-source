@@ -14,16 +14,16 @@
 
 .form__fieldset--tel {
   padding: 0 30px;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 
 .form__fieldset--email {
   padding: 0 30px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .form__fieldset--more {
-  padding: 0 30px;
+  padding: 0 30px 2px 30px;
 }
 
 .form__legend {
@@ -44,7 +44,7 @@
 }
 
 .form__legend--email {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .form__legend--more {
@@ -74,7 +74,7 @@
 
 .form__text {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -85,7 +85,7 @@
 }
 
 .form__input-text {
-  padding: 14px 0;
+  padding: 14px 0 14px 0;
   border: none;
   border-bottom: 2px solid $color-black;
 
@@ -118,7 +118,7 @@
   margin: 0;
   padding: 15px;
   border: 2px solid $color-grey-dark;
-  min-height: 110px;
+  min-height: 107px;
   max-width: 228px;
 
   @include font-regular;
@@ -162,7 +162,8 @@
     border-radius: 50%;
   }
 
-  &:hover::before {
+  &:hover::before,
+  &:focus::before {
     border: 2px solid #77d7c3;
   }
 
@@ -219,7 +220,7 @@
 .form__bottom {
   margin: 0 auto;
   width: 320px;
-  padding: 0 30px;
+  padding: 0 30px 50px 30px;
   box-sizing: border-box;
 }
 
@@ -251,9 +252,16 @@
   .form__fieldset {
     width: 768px;
     position: relative;
-    padding: 50px 50px 0 225px;
+    padding: 50px 50px 15px 215px;
+
+    &--color {
+      padding-top: 60px;
+      padding-right: 0;
+      padding-bottom: 10px;
+    }
 
     &--personal {
+      padding-top: 53px;
       margin-bottom: 0;
       padding-bottom: 30px;
     }
@@ -282,7 +290,6 @@
   .form__bottom {
     padding-left: 50px;
     padding-right: 50px;
-    margin-bottom: 50px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -298,19 +305,27 @@
 
   .form__legend {
     position: absolute;
-    top: 50px;
+    top: 55px;
     left: 50px;
 
+    &--color {
+      top: 65px;
+    }
+
+    &--personal {
+      top: 65px;
+    }
+
     &--tel {
-      top: 70px;
+      top: 65px;
     }
 
     &--email {
-      top: 20px;
+      top: 15px;
     }
 
     &--more {
-      top: 70px;
+      top: 65px;
     }
   }
 
@@ -320,38 +335,39 @@
   }
 
   .form__radio {
-    margin-bottom: 55px;
-    padding-left: 78px;
+    margin-bottom: 52px;
+    padding-left: 80px;
   }
 
   .form__checkbox {
-    margin-bottom: 57px;
+    margin-bottom: 52px;
     padding-left: 78px;
-    width: 160px;
+    box-sizing: border-box;
+    width: 265px;
   }
 
   .form__label--radio {
     &::before {
-      top: -15px;
-      left: -78px;
-      width: 52px;
-      height: 52px;
+      top: -12px;
+      left: -80px;
+      width: 50px;
+      height: 50px;
     }
   }
 
   .form__input-radio:checked + .form__label--radio::after {
-    top: 2px;
-    left: -61px;
+    top: 4px;
+    left: -63px;
     width: 22px;
     height: 22px;
   }
 
   .form__label--checkbox {
     &::before {
-      top: -15px;
+      top: -10px;
       left: -78px;
-      width: 52px;
-      height: 52px;
+      width: 50px;
+      height: 50px;
     }
   }
 
@@ -366,6 +382,10 @@
     flex-direction: row;
     align-items: center;
 
+    &--personal {
+      margin-bottom: 26px;
+    }
+
     &--tel {
       margin-bottom: 0;
     }
@@ -376,28 +396,23 @@
   }
 
   .form__label--personal {
-    margin-right: 25px;
+    margin-right: 28px;
+    margin-bottom: 0;
   }
 
   .form__input-text {
     font-size: 19px;
     line-height: 20px;
     flex-grow: 1;
-
-    &--tel {
-      background-color: transparent;
-    }
-
-    &--email {
-      background-color: transparent;
-    }
+    padding-left: 15px;
+    background-color: transparent;
   }
 
   .form__textarea {
     margin: 0;
-    padding: 17px;
-    min-height: 108px;
-    min-width: 450px;
+    padding: 15px 17px;
+    min-height: 109px;
+    min-width: 465px;
     font-size: 19px;
     line-height: 20px;
   }
@@ -414,7 +429,11 @@
 @media (min-width: $width-desktop) {
   .form__fieldset {
     width: 1150px;
-    padding: 50px 50px 0 225px;
+    padding: 50px 50px 15px 225px;
+
+    &--color {
+      padding-top: 58px;
+    }
 
     &--personal {
       padding-right: 225px;
@@ -423,11 +442,13 @@
 
     &--tel {
       padding-right: 225px;
+      padding-top: 47px;
     }
 
     &--email {
       padding-right: 225px;
       padding-bottom: 50px;
+      padding-top: 10px;
     }
 
     &--more {
@@ -436,9 +457,45 @@
     }
   }
 
+  .form__legend {
+    top: 55px;
+    left: 115px;
+
+    &--color {
+      top: 60px;
+      left: 110px;
+    }
+
+    &--personal {
+      top: 60px;
+      left: 110px;
+    }
+
+    &--tel {
+      top: 63px;
+    }
+
+    &--email {
+      top: 27px;
+      left: 110px;
+    }
+
+    &--more {
+      top: 67px;
+    }
+  }
+
+  .form__checkbox {
+    margin-bottom: 52px;
+    padding-left: 78px;
+    box-sizing: border-box;
+    width: 262px;
+  }
+
+
   .form__textarea {
     margin: 0;
-    padding: 17px;
+    padding: 15px;
     min-height: 108px;
     min-width: 666px;
   }

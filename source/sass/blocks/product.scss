@@ -3,7 +3,8 @@
   background-color: $color-white;
   border: 1px solid $color-grey-light;
 
-  &:hover {
+  &:hover,
+  &:focus {
     box-shadow: 0 6px 10px rgba($color: $color-black, $alpha: 0.1);
   }
 
@@ -20,8 +21,8 @@
   margin: 0;
   margin-top: 20px;
   margin-bottom: 5px;
-  margin-right: 30px;
-  margin-left: 30px;
+  margin-right: 25px;
+  margin-left: 25px;
 
   @include font-bold;
   @include font(17px, 24px, $color-black);
@@ -43,8 +44,8 @@
 .product__description {
   margin: 0;
   padding: 0;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 25px;
+  margin-right: 25px;
   padding-bottom: 20px;
 
   @include font-regular;
@@ -53,8 +54,8 @@
 
 .product__price {
   margin: 0;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 25px;
+  margin-right: 25px;
   padding-top: 20px;
   padding-bottom: 25px;
   display: flex;
@@ -98,7 +99,7 @@
 
   .product__container {
     width: 274px;
-    padding: 30px;
+    padding: 25px 30px;
     padding-bottom: 0;
     display: flex;
     flex-direction: column;
@@ -106,7 +107,7 @@
 
   .product__title {
     margin: 0;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     font-size: 20px;
   }
 
@@ -125,7 +126,7 @@
   .product__price {
     margin: 0;
     padding-top: 24px;
-    padding-bottom: 24px;
+    padding-bottom: 28px;
     font-size: 17px;
   }
 
@@ -150,8 +151,14 @@
   }
 
   .product__container {
-    width: 260px;
+    width: 316px;
+    box-sizing: border-box;
     padding: 20px 28px 0 28px;
-    min-height: 197px;
+    min-height: 190px;
+  }
+
+  .product__price {
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 }

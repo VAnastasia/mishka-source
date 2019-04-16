@@ -66,8 +66,8 @@
     padding: 0;
     width: 84px;
     height: 88px;
-    border-left: 1px solid $color-grey-light;
-    border-right: 1px solid $color-grey-light;
+    border: 1px solid $color-grey-light;
+    //border-right: 1px solid $color-grey-light;
     box-shadow: none;
     cursor: pointer;
   }
