@@ -1,5 +1,21 @@
 .top-product {
-  padding: 30px 30px 40px 30px;
+  margin: 0 auto;
+  position: relative;
+  background-color: $color-white;
+  padding: 25px 30px 40px 30px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-position: center;
+    background-repeat: repeat-x;
+    background-size: contain;
+  }
 }
 
 .top-product__title {
@@ -62,11 +78,16 @@
 @media (min-width: $width-tablet) {
   .top-product {
     position: relative;
-    padding: 40px 50px 50px 50px;
+    padding: 40px 50px 65px 50px;
+
+    &::after {
+      height: 17px;
+    }
   }
 
   .top-product__title {
-    margin-bottom: 55px;
+    margin-bottom: 50px;
+    margin-left: 0;
     font-size: 43px;
     line-height: 50px;
   }
@@ -77,7 +98,7 @@
     text-align: center;
     position: absolute;
     top: 50px;
-    right: 50px;
+    right: 80px;
   }
 
   .top-product__container {
@@ -91,16 +112,19 @@
   }
 
   .top-product__list {
-    margin-bottom: 45px;
+    margin-bottom: 55px;
+  }
+
+  .top-product__field {
+    width: 95px;
   }
 
   .top-product__image {
     position: absolute;
     right: 50px;
-    bottom: 50px;
+    bottom: 65px;
     margin: 0;
     width: 333px;
-    z-index: -1;
   }
 
   .top-product__price {
@@ -113,24 +137,30 @@
 
 @media (min-width: $width-desktop) {
   .top-product {
-    padding: 120px 50px 70px 50px;
+    padding: 120px 50px 90px 50px;
+
+    &::after {
+      height: 23px;
+    }
   }
 
   .top-product__title {
+    position: relative;
     margin-left: 175px;
-    margin-bottom: 45px;
+    margin-bottom: 50px;
     font-size: 53px;
     line-height: 57px;
+    z-index: 2;
   }
 
   .top-product__image {
     right: 50px;
-    bottom: 70px;
+    bottom: 90px;
     width: 525px;
   }
 
   .top-product__description {
-    margin-bottom: 55px;
+    margin-bottom: 45px;
   }
 
   .top-product__container {
@@ -138,11 +168,11 @@
   }
 
   .top-product__list {
-    margin-bottom: 100px;
+    margin-bottom: 110px;
   }
 
   .top-product__subtitle {
-    top: 130px;
-    left: 50px;
+    top: 132px;
+    left: 95px;
   }
 }

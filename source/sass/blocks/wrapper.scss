@@ -1,6 +1,7 @@
 .wrapper {
   margin: 0 auto;
-  width: 320px;
+  box-sizing: border-box;
+  width: $width-mobile;
 }
 
 @media (min-width: $width-tablet) {

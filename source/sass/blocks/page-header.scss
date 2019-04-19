@@ -1,5 +1,6 @@
 .page-header {
   position: relative;
+  box-shadow: 0 1px 0 $color-grey-light;
 }
 
 .page-header__text {
@@ -9,6 +10,7 @@
 @media (min-width: $width-tablet) {
   .page-header {
     background-color: #f9f9f9;
+    box-shadow: none;
   }
 
   .page-header--inner {
@@ -18,7 +20,7 @@
   .page-header__text {
     display: block;
     margin: 0;
-    padding: 15px 0;
+    padding: 18px 0;
     padding-right: 50px;
 
     @include font-regular;

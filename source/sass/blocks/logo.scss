@@ -6,6 +6,14 @@
   padding-bottom: 20px;
   text-align: center;
   box-shadow: 0 1px 0 $color-grey-light;
+
+  &[href]:hover {
+    opacity: 0.6;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
 }
 
 .logo--footer {
@@ -19,15 +27,29 @@
 
 @media (min-width: $width-tablet) {
   .logo {
-    width: 320px;
+    width: auto;
     padding: 0;
+    padding-top: 5px;
     text-align: left;
     box-shadow: none;
   }
 
   .logo--footer {
+    padding-top: 0;
     display: block;
-    width: auto;
+    width: 180px;
+  }
+
+  .logo[href] .logo__icon {
+    &:hover path,
+    &:focus path {
+      fill: #45c1ae;
+    }
+
+    &:active {
+      fill: #45c1ae;
+      opacity: 0.3;
+    }
   }
 }
 
@@ -35,6 +57,13 @@
   .logo {
     width: auto;
     padding: 0;
+    padding-top: 5px;
     text-align: center;
+  }
+
+  .logo--footer {
+    padding: 0;
+    width: 185px;
+    text-align: left;
   }
 }

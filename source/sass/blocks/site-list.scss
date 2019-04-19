@@ -13,7 +13,8 @@
   text-decoration: none;
   box-shadow: 0 1px 0 $color-grey-light;
 
-  &[href]:hover {
+  &[href]:hover,
+  &[href]:focus {
     color: rgba($color: $color-black, $alpha: 0.6);
   }
 
@@ -33,7 +34,7 @@
     padding-left: 50px;
     padding-right: 50px;
     min-height: 60px;
-    width: 350px;
+    width: 380px;
   }
 
   .site-list__link {
@@ -46,8 +47,7 @@
 
 @media (min-width: $width-desktop) {
   .site-list {
-    width: 450px;
-    //order: 1;
+    width: auto;
     position: static;
     padding: 0;
   }
@@ -57,7 +57,7 @@
   }
 
   .site-list__link {
-    padding: 35px;
+    padding: 30px 35px;
     margin: 0;
     font-size: 17px;
     min-height: auto;

@@ -1,18 +1,36 @@
 .social {
+  display: flex;
+  justify-content: center;
   padding-top: 25px;
-  padding-bottom: 25px;
+  padding-bottom: 23px;
   border-bottom: 1px solid #e5e5e5;
 }
 
 .social__list {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 143px;
 
   @include list-reset;
+}
+
+.social__icon {
+  &:hover path,
+  &:focus path {
+    fill: #45c1ae;
+  }
+
+  &:active {
+    fill: #45c1ae;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $width-tablet) {
   .social {
     padding: 0;
+    padding-top: 8px;
     border: none;
     width: 150px;
   }

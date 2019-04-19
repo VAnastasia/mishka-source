@@ -4,11 +4,29 @@
   background-color: #f1f1f1;
 }
 
+.page-footer__container {
+  margin: 0 auto;
+  width: 260px;
+}
+
 @media (min-width: $width-tablet) {
   .page-footer {
-    padding: 50px;
+    padding: 52px 0;
+  }
+
+  .page-footer__container {
+    margin: 0 auto;
+    padding: 0 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-sizing: border-box;
+    width: $width-tablet;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .page-footer__container {
+    width: $width-desktop;
   }
 }
