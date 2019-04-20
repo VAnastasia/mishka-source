@@ -228,18 +228,33 @@
   .form__legend {
     width: 100%;
     position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
     &::after {
+      position: absolute;
+
       margin-left: 25px;
       content: "";
-      width: 150px;
+      width: 205px;
+      top: 50%;
+      right: 0;
       height: 1px;
       background-color: $color-aqua;
-      flex-grow: 1;
-      flex-shrink: 0;
+    }
+
+    &--color::after {
+      width: 200px;
+    }
+
+    &--personal::after {
+      top: 12px;
+    }
+
+    &--tel::after {
+      width: 215px;
+    }
+
+    &--email::after {
+      width: 190px;
     }
   }
 }
