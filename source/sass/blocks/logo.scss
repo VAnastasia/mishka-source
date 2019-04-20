@@ -23,6 +23,8 @@
 .logo__image {
   margin: 0;
   padding: 0;
+  width: 86px;
+  height: 35px;
 }
 
 @media (min-width: $width-tablet) {
@@ -32,6 +34,11 @@
     padding-top: 5px;
     text-align: left;
     box-shadow: none;
+  }
+
+  .logo__image {
+    width: 112px;
+    height: 46px;
   }
 
   .logo--footer {
@@ -59,6 +66,11 @@
     padding: 0;
     padding-top: 5px;
     text-align: center;
+  }
+
+  .logo__image {
+    width: 148px;
+    height: 73px;
   }
 
   .logo--footer {

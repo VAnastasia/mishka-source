@@ -85,7 +85,10 @@
 }
 
 .contacts__map-image {
+  display: block;
+  margin: 0 auto;
   width: 320px;
+  height: 457px;
 }
 
 .contacts__write {
@@ -151,6 +154,7 @@
 
   .contacts__map-image {
     width: 768px;
+    height: 457px;
   }
 
   .contacts__write {
@@ -214,5 +218,6 @@
 
   .contacts__map-image {
     width: 525px;
+    height: 457px;
   }
 }

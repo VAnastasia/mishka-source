@@ -45,7 +45,8 @@
   border: 2px solid $color-grey-light;
   background-color: $color-white;
 
-  &:hover {
+  &:hover,
+  &:focus {
     border: 2px solid rgba($color: $color-grey-dark, $alpha: 0.3);
     background-color: $color-white;
   }
@@ -63,6 +64,7 @@
   border: 2px solid $color-aqua;
 
   &:hover,
+  &:focus,
   &:active {
     color: $color-aqua;
     background-color: $color-white;
