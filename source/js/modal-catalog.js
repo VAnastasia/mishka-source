@@ -4,7 +4,8 @@ var buttonModal = document.querySelector('.modal__form');
 var bgModal = document.querySelector('.modal__background');
 
 for (var i = 0; i < buttonOrder.length; i++) {
-  buttonOrder[i].addEventListener('click', function() {
+  buttonOrder[i].addEventListener('click', function(evt) {
+    evt.preventDefault();
     if (modal.classList.contains('modal--hidden')) {
       modal.classList.remove('modal--hidden');
     }

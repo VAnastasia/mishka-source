@@ -3,7 +3,8 @@ var modal = document.querySelector('.modal');
 var buttonModal = document.querySelector('.modal__form');
 var bgModal = document.querySelector('.modal__background');
 
-buttonOrder.addEventListener('click', function() {
+buttonOrder.addEventListener('click', function(evt) {
+  evt.preventDefault();
   if (modal.classList.contains('modal--hidden')) {
     modal.classList.remove('modal--hidden');
   }
