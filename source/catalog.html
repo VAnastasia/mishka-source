@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Academy: Мишка</title>
+  <script src="js/picturefill.js" async></script>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -15,7 +16,7 @@
         <picture>
           <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-          <img class="logo__image" src="img/logo-mobile.svg" alt="Мишка">
+          <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
         </picture>
       </a>
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -66,9 +67,9 @@
         <li class="catalog__item product">
           <a class="product__image-link" href="#">
             <picture>
-              <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg">
-              <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg">
-              <img class="product__image" src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик">
+              <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg, img/photo-hare-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg, img/photo-hare-tablet@2x.jpg 2x">
+              <img class="product__image" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" alt="Зайчик-попрыгайчик">
             </picture>
           </a>
           <div class="product__container">
@@ -89,9 +90,9 @@
         <li class="catalog__item product">
           <a class="product__image-link" href="#">
             <picture>
-              <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg">
-              <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg">
-              <img class="product__image" src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья">
+              <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg, img/photo-bowl-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg, img/photo-bowl-tablet@2x.jpg 2x">
+              <img class="product__image" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="Корзинка для белья">
             </picture>
           </a>
           <div class="product__container">
@@ -112,9 +113,9 @@
         <li class="catalog__item product">
           <a class="product__image-link" href="#">
             <picture>
-              <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg">
-              <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg">
-              <img class="product__image" src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек">
+              <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg, img/photo-toys-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg, img/photo-toys-tablet@2x.jpg 2x">
+              <img class="product__image" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" alt="Большая корзинка для игрушек">
             </picture>
           </a>
           <div class="product__container">
@@ -140,9 +141,9 @@
     <h2 class="production-process__title">Процесс производства</h2>
     <div class="production-process__video video">
       <picture>
-        <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg">
-        <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg">
-        <img class="video__image" src="img/video-mobile@1x.jpg" alt="Процесс производства">
+        <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg, img/video-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg, img/video-tablet@2x.jpg 2x">
+        <img class="video__image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Процесс производства">
       </picture>
       <button class="video__button" type="button">
         <span class="visually-hidden">Запустить видео</span>
@@ -219,10 +220,10 @@
   </div>
   </div>
 </footer>
-<section class="modal">
+<section class="modal modal--hidden">
   <h2 class="modal__title">Добавить в корзину</h2>
   <p class="modal__description">Выберите размер:</p>
-  <form action="https://echo.htmlacademy.ru" method="POST">
+  <form class="modal__form" action="https://echo.htmlacademy.ru" method="POST">
     <ul class="modal__list">
       <li class="modal__item">
         <input class="visually-hidden modal__input" type="radio" name="size" id="small" value="S" checked>
@@ -240,6 +241,8 @@
     <button class="button modal__button" type="submit">Добавить</button>
   </form>
 </section>
+<div class="modal__background"></div>
 <script src="js/menu-mobile.js"></script>
+<script src=js/modal-catalog.js></script>
 </body>
 </html>

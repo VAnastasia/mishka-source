@@ -17,6 +17,11 @@
   text-decoration: none;
 }
 
+.product__image {
+  width: 260px;
+  height: 195px;
+}
+
 .product__title {
   margin: 0;
   margin-top: 20px;
@@ -137,8 +142,9 @@
 
 @media (min-width: $width-desktop) {
   .product {
-    display: block;
     width: 316px;
+    flex-direction: column;
+    justify-content: stretch;
   }
 
   .product__image-link {
@@ -155,6 +161,7 @@
     box-sizing: border-box;
     padding: 20px 28px 0 28px;
     min-height: 190px;
+    flex-grow: 1;
   }
 
   .product__price {
