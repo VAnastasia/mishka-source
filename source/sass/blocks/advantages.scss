@@ -112,7 +112,8 @@
 
   .advantages__item {
     position: relative;
-    width: 300px;
+    box-sizing: border-box;
+    width: 50%;
     padding-top: 50px;
     padding-bottom: 62px;
     padding-right: 30px;

@@ -7,7 +7,7 @@
   position: relative;
   box-sizing: border-box;
   margin: 0 auto;
-  width: $width-mobile;
+  max-width: $width-mobile;
 }
 
 .main-nav__toggle {
@@ -82,7 +82,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: $width-tablet;
+    max-width: $width-tablet;
   }
 
   .main-nav__toggle {
@@ -111,6 +111,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: $width-desktop;
+    max-width: $width-desktop;
   }
 }

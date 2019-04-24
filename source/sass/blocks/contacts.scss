@@ -7,7 +7,7 @@
 
 .contacts__container {
   margin: 0 auto;
-  width: $width-mobile;
+  max-width: $width-mobile;
 }
 
 .contacts__title {
@@ -103,7 +103,7 @@
   }
 
   .contacts__container {
-    width: $width-tablet;
+    max-width: $width-tablet;
   }
 
   .contacts__title {
@@ -138,14 +138,20 @@
   .contacts__table {
     display: flex;
     justify-content: space-between;
+
+    tr {
+      display: block;
+    }
   }
 
   .contacts__field {
     width: 70px;
+    display: block;
   }
 
   .contacts__value {
     width: 254px;
+    display: block;
   }
 
   .contacts__map {
@@ -153,7 +159,7 @@
   }
 
   .contacts__map-image {
-    width: 768px;
+    max-width: 768px;
     height: 457px;
   }
 
@@ -168,14 +174,14 @@
     position: relative;
     display: flex;
     justify-content: center;
-    width: $width-desktop;
+    max-width: $width-desktop;
     padding: 70px 0 95px 0;
   }
 
   .contacts__container {
     margin: 0;
     padding-top: 65px;
-    width: 350px;
+    max-width: 350px;
     padding-left: 175px;
   }
 

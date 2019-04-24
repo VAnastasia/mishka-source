@@ -1,5 +1,6 @@
 .product {
   width: 260px;
+  box-sizing: border-box;
   background-color: $color-white;
   border: 1px solid $color-grey-light;
 
@@ -18,6 +19,7 @@
 }
 
 .product__image {
+  display: block;
   width: 260px;
   height: 195px;
 }
@@ -37,7 +39,8 @@
   color: $color-black;
   text-decoration: none;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: rgba($color: $color-black, $alpha: 0.6);
   }
 
@@ -58,9 +61,8 @@
 }
 
 .product__price {
-  margin: 0;
-  margin-left: 25px;
-  margin-right: 25px;
+  position: relative;
+  margin: 0 25px;
   padding-top: 20px;
   padding-bottom: 25px;
   display: flex;
@@ -72,15 +74,13 @@
 }
 
 .product__buy {
-  position: relative;
+  display: block;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
 }
 
 .product__icon-cart {
-  position: absolute;
-  content: "";
-  top: 0;
-  right: 0;
-
   path {
     fill: #d3d2d2;
   }
@@ -103,7 +103,8 @@
   }
 
   .product__container {
-    width: 274px;
+    width: 334px;
+    box-sizing: border-box;
     padding: 25px 30px;
     padding-bottom: 0;
     display: flex;

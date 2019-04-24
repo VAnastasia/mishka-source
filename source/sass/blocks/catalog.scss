@@ -1,9 +1,11 @@
 .catalog__wrapper {
   margin: 0 auto;
   width: 320px;
+  max-width: 100%;
   box-sizing: border-box;
   padding: 30px;
   padding-bottom: 0;
+  background-color: $color-white;
 }
 
 .catalog__title {
@@ -27,7 +29,6 @@
     position: relative;
     padding-top: 35px;
     padding-bottom: 85px;
-    margin-bottom: 75px;
 
     &::after {
       content: "";
@@ -46,6 +47,7 @@
   .catalog__wrapper {
     width: 768px;
     padding: 0 50px;
+    padding-top: 75px;
   }
 
   .catalog__item {
@@ -57,13 +59,13 @@
   .catalog__title {
     padding-top: 35px;
     padding-bottom: 105px;
-    margin-bottom: 125px;
   }
 
   .catalog__wrapper {
     width: 1150px;
     padding: 0 50px;
     padding-bottom: 5px;
+    padding-top: 125px;
   }
 
   .catalog__list {

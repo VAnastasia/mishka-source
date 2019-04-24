@@ -1,17 +1,17 @@
 .wrapper {
   margin: 0 auto;
   box-sizing: border-box;
-  width: $width-mobile;
+  max-width: $width-mobile;
 }
 
 @media (min-width: $width-tablet) {
   .wrapper {
-    width: $width-tablet;
+    max-width: $width-tablet;
   }
 }
 
 @media (min-width: $width-desktop) {
   .wrapper {
-    width: $width-desktop;
+    max-width: $width-desktop;
   }
 }

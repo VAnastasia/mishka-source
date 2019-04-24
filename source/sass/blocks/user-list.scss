@@ -9,13 +9,15 @@
   padding-top: 28px;
   padding-bottom: 28px;
   padding-left: 75px;
+  overflow: hidden;
 
   @include font-bold;
   @include font(17px, 24px, $color-black);
   text-decoration: none;
   box-shadow: 0 1px 0 $color-grey-light;
 
-  &[href]:hover {
+  &[href]:hover,
+  &[href]:focus {
     color: rgba($color: $color-black, $alpha: 0.6);
   }
 
@@ -35,7 +37,8 @@
     fill: #d3d2d2;
   }
 
-  &:hover path {
+  &:hover path,
+  &:focus path {
     fill: $color-aqua;
   }
 
@@ -47,18 +50,19 @@
 
 @media (min-width: $width-tablet) {
   .user-list {
+    position: relative;
     display: flex;
     align-items: center;
     order: 2;
   }
 
   .user-list__cart {
-    padding: 0 0 0 80px;
+    padding: 30px 0 30px 80px;
     box-shadow: none;
   }
 
   .user-list__cart-icon {
-    top: 0;
+    top: 33px;
     left: 30px;
   }
 
@@ -66,8 +70,8 @@
     padding: 0;
     width: 84px;
     height: 88px;
-    border: 1px solid $color-grey-light;
-    //border-right: 1px solid $color-grey-light;
+    border-left: 1px solid $color-grey-light;
+    border-right: 1px solid $color-grey-light;
     box-shadow: none;
     cursor: pointer;
   }
