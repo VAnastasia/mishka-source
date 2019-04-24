@@ -16,8 +16,8 @@
 }
 
 .social__icon {
-  &:hover path,
-  &:focus path {
+  &:hover,
+  &:focus {
     fill: #45c1ae;
   }
 

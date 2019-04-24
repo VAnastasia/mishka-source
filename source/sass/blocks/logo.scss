@@ -48,9 +48,9 @@
     width: 180px;
   }
 
-  .logo[href] .logo__icon {
-    &:hover path,
-    &:focus path {
+  .logo--footer[href] .logo__icon {
+    &:hover,
+    &:focus {
       fill: #45c1ae;
     }
 

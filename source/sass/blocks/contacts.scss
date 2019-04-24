@@ -204,10 +204,19 @@
 
   .contacts__table {
     display: block;
+
+    tr {
+      display: table-row;
+    }
   }
 
   .contacts__field {
     width: 75px;
+    display: table-cell;
+  }
+
+  .contacts__value {
+    display: table-cell;
   }
 
   .contacts__write {

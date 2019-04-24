@@ -81,16 +81,14 @@
 }
 
 .product__icon-cart {
-  path {
-    fill: #d3d2d2;
-  }
+  fill: #d3d2d2;
 
-  &:hover path,
-  &:focus path {
+  &:hover,
+  &:focus {
     fill: $color-aqua;
   }
 
-  &:active path {
+  &:active {
     fill: $color-aqua;
     opacity: 0.3;
   }
