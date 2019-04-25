@@ -1,5 +1,5 @@
 .form__fieldset {
-  width: 320px;
+  max-width: 320px;
   padding: 32px 30px;
   margin: 0 auto;
   border: none;
@@ -219,7 +219,7 @@
 
 .form__bottom {
   margin: 0 auto;
-  width: 320px;
+  max-width: 320px;
   padding: 0 30px 50px 30px;
   box-sizing: border-box;
 }
@@ -265,7 +265,7 @@
   }
 
   .form__fieldset {
-    width: 768px;
+    max-width: 768px;
     position: relative;
     padding: 50px 50px 15px 215px;
 
@@ -309,7 +309,7 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    width: 768px;
+    max-width: 768px;
   }
 
   .form__note {
@@ -443,7 +443,7 @@
 
 @media (min-width: $width-desktop) {
   .form__fieldset {
-    width: 1150px;
+    max-width: 1150px;
     padding: 50px 50px 15px 225px;
 
     &--color {
@@ -516,7 +516,7 @@
   }
 
   .form__bottom {
-    width: 1150px;
+    max-width: 1150px;
     padding-left: 225px;
     padding-right: 225px;
   }

@@ -6,9 +6,10 @@
 .categories__item {
   position: relative;
   margin: 0 auto;
-  width: 320px;
+  max-width: 320px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     top: -5px;
     padding-bottom: 5px;
     margin-bottom: -5px;
@@ -97,7 +98,7 @@
   }
 
   .categories__item {
-    width: 334px;
+    max-width: 334px;
   }
 
   .categories__item--interior::after {
@@ -137,7 +138,7 @@
   }
 
   .categories__item {
-    width: 525px;
+    max-width: 525px;
   }
 
   .categories__text {

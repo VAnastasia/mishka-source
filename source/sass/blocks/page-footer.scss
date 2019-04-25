@@ -6,7 +6,7 @@
 
 .page-footer__container {
   margin: 0 auto;
-  width: 260px;
+  max-width: 260px;
 }
 
 @media (min-width: $width-tablet) {
@@ -21,12 +21,12 @@
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-    width: $width-tablet;
+    max-width: $width-tablet;
   }
 }
 
 @media (min-width: $width-desktop) {
   .page-footer__container {
-    width: $width-desktop;
+    max-width: $width-desktop;
   }
 }
