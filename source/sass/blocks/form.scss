@@ -196,7 +196,8 @@
     border: 2px solid $color-black;
   }
 
-  &:hover::before {
+  &:hover::before,
+  &:focus::before {
     border: 2px solid #77d7c3;
   }
 
@@ -372,7 +373,7 @@
 
   .form__input-radio:checked + .form__label--radio::after {
     top: 4px;
-    left: -63px;
+    left: -64px;
     width: 22px;
     height: 22px;
   }
