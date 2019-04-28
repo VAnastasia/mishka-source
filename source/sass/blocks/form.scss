@@ -162,8 +162,7 @@
     border-radius: 50%;
   }
 
-  &:hover::before,
-  &:focus::before {
+  &:hover::before {
     border: 2px solid #77d7c3;
   }
 
@@ -181,6 +180,10 @@
   height: 16px;
   background-color: #61d1b9;
   border-radius: 50%;
+}
+
+.form__input-radio:focus + .form__label--radio::before {
+  border: 2px solid #77d7c3;
 }
 
 .form__label--checkbox {
@@ -215,6 +218,10 @@
   border-left: 2px solid $color-black;
   border-bottom: 2px solid $color-black;
   transform: rotate(-45deg);
+}
+
+.form__input-checkbox:focus + .form__label--checkbox::before {
+  border: 2px solid #77d7c3;
 }
 
 .form__bottom {
@@ -372,7 +379,7 @@
 
   .form__input-radio:checked + .form__label--radio::after {
     top: 4px;
-    left: -63px;
+    left: -64px;
     width: 22px;
     height: 22px;
   }
