@@ -1,20 +1,24 @@
 .form__fieldset {
   max-width: 320px;
-  padding: 32px 30px;
+  padding: 32px 30px 28px 30px;
   margin: 0 auto;
   border: none;
   box-sizing: border-box;
 }
 
+.form__fieldset--color {
+  padding-bottom: 35px;
+}
+
 .form__fieldset--personal {
-  padding-top: 30px;
+  padding-top: 28px;
   padding-bottom: 0;
   margin-bottom: 10px;
 }
 
 .form__fieldset--tel {
   padding: 0 30px;
-  margin-bottom: 6px;
+  margin-bottom: 10px;
 }
 
 .form__fieldset--email {
@@ -61,7 +65,7 @@
   padding: 0;
   padding-left: 62px;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .form__checkbox {
@@ -80,14 +84,20 @@
   flex-direction: column;
 }
 
+.form__text--personal {
+  margin-bottom: 24px;
+}
+
 .form__text--textarea {
   margin-bottom: 15px;
 }
 
 .form__input-text {
-  padding: 14px 0 14px 0;
+  padding: 15px 0;
+  margin: 0;
   border: none;
-  border-bottom: 2px solid $color-black;
+  border-radius: 0;
+  box-shadow: 0 2px 0 0 $color-black;
 
   @include font-regular;
   @include font(17px, 18px, $color-grey-dark);
@@ -100,12 +110,12 @@
   &:focus,
   &:active {
     outline: none;
-    border-bottom: 2px solid #77d7c3;
+    box-shadow: 0 2px 0 0 #77d7c3;
   }
 }
 
 .form__input-text--tel {
-  padding: 14px 0;
+  padding: 13px 0;
 
   @include font(19px, 19px, $color-grey-dark);
 }
@@ -192,7 +202,7 @@
   &::before {
     position: absolute;
     content: "";
-    top: -9px;
+    top: -8px;
     left: -62px;
     width: 36px;
     height: 36px;
@@ -227,7 +237,7 @@
 .form__bottom {
   margin: 0 auto;
   max-width: 320px;
-  padding: 0 30px 50px 30px;
+  padding: 0 30px 58px 30px;
   box-sizing: border-box;
 }
 
@@ -295,12 +305,12 @@
 
     &--email {
       margin-bottom: 0;
-      padding-top: 0;
+      padding-top: 5px;
       padding-bottom: 50px;
     }
 
     &--more {
-      padding-bottom: 50px;
+      padding-bottom: 53px;
     }
   }
 
@@ -312,6 +322,7 @@
   .form__bottom {
     padding-left: 50px;
     padding-right: 50px;
+    padding-bottom: 45px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -343,7 +354,7 @@
     }
 
     &--email {
-      top: 15px;
+      top: 20px;
     }
 
     &--more {
@@ -470,7 +481,7 @@
     &--email {
       padding-right: 225px;
       padding-bottom: 50px;
-      padding-top: 10px;
+      padding-top: 15px;
     }
 
     &--more {
@@ -498,7 +509,7 @@
     }
 
     &--email {
-      top: 27px;
+      top: 30px;
       left: 110px;
     }
 
@@ -526,5 +537,6 @@
     max-width: 1150px;
     padding-left: 225px;
     padding-right: 225px;
+    padding-bottom: 50px;
   }
 }

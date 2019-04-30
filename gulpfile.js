@@ -17,6 +17,7 @@ var include = require("posthtml-include");
 var del = require("del");
 var uglify = require("gulp-uglify");
 var pipeline = require("readable-stream").pipeline;
+var htmlmin = require("gulp-htmlmin");
 
 gulp.task("jsmin", function () {
   return pipeline(
@@ -74,6 +75,7 @@ gulp.task("html", function () {
   .pipe(posthtml([
     include()
   ]))
+  .pipe(htmlmin({collapseWhitespace: true }))
   .pipe(gulp.dest("build/"));
 });
 
