@@ -97,7 +97,7 @@
   margin: 0;
   border: none;
   border-radius: 0;
-  box-shadow: 0 2px 0 0 $color-black;
+  border-bottom: 2px solid $color-black;
 
   @include font-regular;
   @include font(17px, 18px, $color-grey-dark);
@@ -110,7 +110,7 @@
   &:focus,
   &:active {
     outline: none;
-    box-shadow: 0 2px 0 0 #77d7c3;
+    border-bottom: 2px solid #77d7c3;
   }
 }
 
