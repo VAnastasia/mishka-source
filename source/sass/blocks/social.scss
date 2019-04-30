@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   padding-top: 25px;
-  padding-bottom: 23px;
+  padding-bottom: 21px;
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -10,7 +10,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 143px;
+  width: 140px;
 
   @include list-reset;
 }
@@ -30,7 +30,7 @@
 @media (min-width: $width-tablet) {
   .social {
     padding: 0;
-    padding-top: 8px;
+    padding-top: 10px;
     border: none;
     width: 150px;
   }

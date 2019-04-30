@@ -16,6 +16,7 @@
 .copyright__text {
   @include font-bold;
   @include font(19px, 25px, $color-black);
+  margin-right: 20px;
 }
 
 .copyright__icon {
@@ -44,6 +45,7 @@
 @media (min-width: $width-tablet) {
   .copyright {
     padding: 0;
+    padding-top: 3px;
     width: 185px;
   }
 }

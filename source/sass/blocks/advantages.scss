@@ -62,7 +62,7 @@
     width: 34px;
     height: 28px;
     top: 2px;
-    left: 5px;
+    left: 7px;
     background-image: url("../img/icon-feature-heart.svg");
   }
 }
@@ -89,18 +89,18 @@
   &::before {
     width: 33px;
     height: 32px;
-    left: 2px;
+    left: 4px;
     background-image: url("../img/icon-feature-gift.svg");
   }
 }
 
 @media (min-width: $width-tablet) {
   .advantages {
-    padding: 55px 50px 20px 50px;
+    padding: 53px 50px 20px 48px;
   }
 
   .advantages__title {
-    margin-bottom: 50px;
+    margin-bottom: 52px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -108,6 +108,7 @@
   .advantages__list {
     display: flex;
     flex-wrap: wrap;
+    margin-left: 2px;
   }
 
   .advantages__item {
@@ -150,6 +151,7 @@
   .advantages__title {
     font-size: 53px;
     line-height: 57px;
+    margin-left: -5px;
   }
 
   .advantages__item {
