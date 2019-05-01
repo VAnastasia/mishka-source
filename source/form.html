@@ -132,14 +132,24 @@
         <legend class="form__legend form__legend--tel">Тел</legend>
         <p class="form__text form__text--tel">
           <label for="phone" class="visually-hidden">Телефон</label>
-          <input class="form__input-text form__input-text--tel" type="tel" id="phone" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+          <div class="form__input-icon">
+            <input class="form__input-text form__input-text--tel" type="tel" id="phone" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+            <svg class="form__icon" width="25" height="24" >
+              <use xlink:href="#icon-phone"></use>
+            </svg>
+          </div>
         </p>
       </fieldset>
       <fieldset class="form__fieldset form__fieldset--email">
         <legend class="form__legend form__legend--email">E-mail</legend>
         <p class="form__text form__text--email">
           <label for="email" class="visually-hidden">Электронная почта</label>
-          <input class="form__input-text form__input-text--email" type="email" id="email" name="email" placeholder="Ваш Email*" required>
+          <div class="form__input-icon">
+            <input class="form__input-text form__input-text--email" type="email" id="email" name="email" placeholder="Ваш Email*" required>
+            <svg class="form__icon" width="32" height="32" >
+              <use xlink:href="#icon-mail"></use>
+            </svg>
+          </div>
         </p>
       </fieldset>
       </div>

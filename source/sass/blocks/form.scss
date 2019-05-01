@@ -18,12 +18,12 @@
 
 .form__fieldset--tel {
   padding: 0 30px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .form__fieldset--email {
   padding: 0 30px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .form__fieldset--more {
@@ -44,11 +44,11 @@
 }
 
 .form__legend--tel {
-  margin-bottom: 5px;
+  margin-bottom: 0;
 }
 
 .form__legend--email {
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }
 
 .form__legend--more {
@@ -85,7 +85,15 @@
 }
 
 .form__text--personal {
-  margin-bottom: 24px;
+  margin-bottom: 19px;
+}
+
+.form__text--tel {
+  margin-bottom: 8px;
+}
+
+.form__text--email {
+  margin-bottom: 8px;
 }
 
 .form__text--textarea {
@@ -93,7 +101,9 @@
 }
 
 .form__input-text {
-  padding: 15px 0;
+  box-sizing: border-box;
+  height: 52px;
+  padding: 0;
   margin: 0;
   border: none;
   border-radius: 0;
@@ -101,6 +111,16 @@
 
   @include font-regular;
   @include font(17px, 18px, $color-grey-dark);
+
+  &:required:invalid,
+  &:required {
+    outline: none;
+    box-shadow: none;
+  }
+
+  &:-ms-input-placeholder {
+    color: rgba($color: $color-grey-dark, $alpha: 0.3);
+  }
 
   &::placeholder {
     color: rgba($color: $color-grey-dark, $alpha: 0.3);
@@ -115,13 +135,30 @@
 }
 
 .form__input-text--tel {
-  padding: 13px 0;
+  width: 100%;
+  padding-right: 45px;
 
   @include font(19px, 19px, $color-grey-dark);
 }
 
 .form__input-text--email {
-  padding: 14px 0;
+  width: 100%;
+  padding-right: 45px;
+}
+
+.form__input-icon {
+  position: relative;
+}
+
+.form__icon {
+  position: absolute;
+  top: 10px;
+  right: 6px;
+  fill: #cccccc;
+}
+
+.form__input-text:focus + .form__icon {
+  fill: #61d1b9;
 }
 
 .form__textarea {
@@ -133,6 +170,11 @@
 
   @include font-regular;
   @include font(17px, 17px, $color-grey-dark);
+
+  &:-ms-input-placeholder {
+    color: rgba($color: $color-grey-dark, $alpha: 0.3);
+  }
+
 
   &::placeholder {
     color: rgba($color: $color-grey-dark, $alpha: 0.3);
@@ -196,6 +238,11 @@
   border: 2px solid #77d7c3;
 }
 
+.form__input-radio:disabled + .form__label--radio::before,
+.form__input-radio:active + .form__label--radio::before {
+  border: 2px solid #77d7c3;
+}
+
 .form__label--checkbox {
   position: relative;
 
@@ -234,6 +281,10 @@
   border: 2px solid #77d7c3;
 }
 
+.form__input-checkbox:disabled + .form__label--checkbox::before {
+  border: 2px solid #c6c6c6;
+}
+
 .form__bottom {
   margin: 0 auto;
   max-width: 320px;
@@ -251,7 +302,7 @@
 
       margin-left: 25px;
       content: "";
-      width: 205px;
+      width: 200px;
       top: 50%;
       right: 0;
       height: 1px;
@@ -266,12 +317,8 @@
       top: 12px;
     }
 
-    &--tel::after {
-      width: 215px;
-    }
-
     &--email::after {
-      width: 190px;
+      width: 180px;
     }
   }
 }
@@ -300,17 +347,19 @@
 
     &--tel {
       margin-bottom: 0;
-      padding-bottom: 25px;
+      padding-bottom: 0;
+      padding-top: 45px;
     }
 
     &--email {
       margin-bottom: 0;
-      padding-top: 5px;
+      padding-top: 12px;
       padding-bottom: 50px;
     }
 
     &--more {
-      padding-bottom: 53px;
+      padding-top: 35px;
+      padding-bottom: 50px;
     }
   }
 
@@ -354,11 +403,11 @@
     }
 
     &--email {
-      top: 20px;
+      top: 25px;
     }
 
     &--more {
-      top: 65px;
+      top: 50px;
     }
   }
 
@@ -416,7 +465,7 @@
     align-items: center;
 
     &--personal {
-      margin-bottom: 26px;
+      margin-bottom: 24px;
     }
 
     &--tel {
@@ -439,6 +488,19 @@
     flex-grow: 1;
     padding-left: 15px;
     background-color: transparent;
+  }
+
+  .form__input-text--email,
+  .form__input-text--tel {
+    padding-right: 55px;
+  }
+
+  .form__icon {
+    right: 20px;
+  }
+
+  .form__input-text--tel + .form__icon {
+    right: 25px;
   }
 
   .form__textarea {
@@ -469,29 +531,31 @@
     }
 
     &--personal {
-      padding-right: 225px;
+      padding-top: 48px;
       padding-bottom: 30px;
+      padding-right: 225px;
     }
 
     &--tel {
-      padding-right: 225px;
       padding-top: 47px;
+      padding-right: 225px;
+      padding-bottom: 10px;
     }
 
     &--email {
-      padding-right: 225px;
       padding-bottom: 50px;
-      padding-top: 15px;
+      padding-top: 0;
+      padding-right: 225px;
     }
 
     &--more {
-      padding-right: 225px;
-      padding-bottom: 50px;
+      padding-top: 35px;
+      padding-bottom: 48px;
     }
   }
 
   .form__legend {
-    top: 55px;
+    top: 52px;
     left: 115px;
 
     &--color {
@@ -501,7 +565,7 @@
 
     &--personal {
       top: 60px;
-      left: 110px;
+      left: 112px;
     }
 
     &--tel {
@@ -509,13 +573,22 @@
     }
 
     &--email {
-      top: 30px;
+      top: 15px;
       left: 110px;
     }
 
     &--more {
-      top: 67px;
+      top: 50px;
+      left: 112px;
     }
+  }
+
+  .form__icon {
+    right: 5px;
+  }
+
+  .form__input-text--tel + .form__icon {
+    right: 5px;
   }
 
   .form__checkbox {
