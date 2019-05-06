@@ -1,5 +1,6 @@
 .order__title {
   margin: 0;
+  margin-bottom: 15px;
   padding-top: 70px;
   padding-bottom: 75px;
   text-align: center;
@@ -9,7 +10,8 @@
 .order__intro {
   max-width: 320px;
   margin: 0 auto;
-  padding: 24px 30px 22px 30px;
+  margin-bottom: 15px;
+  padding: 9px 30px 7px 30px;
   box-sizing: border-box;
 
   @include font-regular;
@@ -38,6 +40,7 @@
   }
 
   .order__intro {
+    margin-bottom: 0;
     max-width: 768px;
     padding: 50px;
     padding-bottom: 20px;

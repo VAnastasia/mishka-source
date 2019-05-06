@@ -8,6 +8,26 @@
     <link rel="preload" href="fonts/opensans.woff2" as="font">
     <link rel="preload" href="fonts/opensansbold.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
+    <!-- <style>
+      body {
+        background-image: url("preview/mishka-form-mobile.jpg");
+        background-repeat: no-repeat;
+        background-position: center top;
+        opacity: 0.5;
+      }
+
+      @media (min-width: 768px) {
+        body {
+          background-image: url("preview/mishka-form-tablet.jpg");
+        }
+      }
+
+      @media (min-width: 1150px) {
+        body {
+          background-image: url("preview/mishka-form-desktop.jpg");
+        }
+      }
+    </style> -->
   </head>
   <body>
     <div style="display: none;">
@@ -82,35 +102,35 @@
             </p>
           </fieldset>
           <div class="form__wrapper">
-          <fieldset class="form__fieldset form__fieldset--color">
-            <legend class="form__legend form__legend--color">Цвет</legend>
-            <div class="form__container">
-              <p class="form__checkbox">
-                <input class="visually-hidden form__input-checkbox" type="checkbox" name="color" id="white"  value="Белый" checked>
-                <label class="form__label form__label--checkbox" for="white">Белый</label>
-              </p>
-              <p class="form__checkbox">
-                <input class="visually-hidden form__input-checkbox" type="checkbox" name="color" id="grey"  value="Серый" checked>
-                <label class="form__label form__label--checkbox" for="grey">Серый</label>
-              </p>
-              <p class="form__checkbox">
-                <input class="visually-hidden form__input-checkbox" type="checkbox" name="color" id="tiffany" value="Тиффани">
-                <label class="form__label form__label--checkbox" for="tiffany">&laquo;Тиффани&raquo;</label>
-              </p>
-              <p class="form__checkbox">
-                <input class="visually-hidden form__input-checkbox" type="checkbox" name="color" id="black" value="Черный">
-                <label class="form__label form__label--checkbox" for="black">Черный</label>
-              </p>
-              <p class="form__checkbox">
-                <input class="visually-hidden form__input-checkbox" type="checkbox" name="color" id="pink" value="Розовый">
-                <label class="form__label form__label--checkbox" for="pink">Розовый</label>
-              </p>
-              <p class="form__checkbox">
-                <input class="visually-hidden form__input-checkbox" type="checkbox" name="color" id="orange" value="Оранжевый">
-                <label class="form__label form__label--checkbox" for="orange">Оранжевый</label>
-              </p>
-            </div>
-          </fieldset>
+            <fieldset class="form__fieldset form__fieldset--color">
+              <legend class="form__legend form__legend--color">Цвет</legend>
+              <div class="form__container">
+                <p class="form__checkbox">
+                  <input class="visually-hidden form__input-checkbox" type="checkbox" name="color" id="white"  value="Белый" checked>
+                  <label class="form__label form__label--checkbox" for="white">Белый</label>
+                </p>
+                <p class="form__checkbox">
+                  <input class="visually-hidden form__input-checkbox" type="checkbox" name="color" id="grey"  value="Серый" checked>
+                  <label class="form__label form__label--checkbox" for="grey">Серый</label>
+                </p>
+                <p class="form__checkbox">
+                  <input class="visually-hidden form__input-checkbox" type="checkbox" name="color" id="tiffany" value="Тиффани">
+                  <label class="form__label form__label--checkbox" for="tiffany">&laquo;Тиффани&raquo;</label>
+                </p>
+                <p class="form__checkbox">
+                  <input class="visually-hidden form__input-checkbox" type="checkbox" name="color" id="black" value="Черный">
+                  <label class="form__label form__label--checkbox" for="black">Черный</label>
+                </p>
+                <p class="form__checkbox">
+                  <input class="visually-hidden form__input-checkbox" type="checkbox" name="color" id="pink" value="Розовый">
+                  <label class="form__label form__label--checkbox" for="pink">Розовый</label>
+                </p>
+                <p class="form__checkbox">
+                  <input class="visually-hidden form__input-checkbox" type="checkbox" name="color" id="orange" value="Оранжевый">
+                  <label class="form__label form__label--checkbox" for="orange">Оранжевый</label>
+                </p>
+              </div>
+            </fieldset>
           </div>
           <fieldset class="form__fieldset form__fieldset--personal">
             <legend class="form__legend form__legend--personal">ФИО</legend>
@@ -128,38 +148,33 @@
             </p>
           </fieldset>
           <div class="form__wrapper">
-          <fieldset class="form__fieldset form__fieldset--tel">
-            <legend class="form__legend form__legend--tel">Тел</legend>
-            <p class="form__text form__text--tel">
-              <label for="phone" class="visually-hidden">Телефон</label>
-              <div class="form__input-icon">
-                <input class="form__input-text form__input-text--tel" type="tel" id="phone" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-                <svg class="form__icon" width="25" height="24" >
-                  <use xlink:href="#icon-phone"></use>
-                </svg>
+            <fieldset class="form__fieldset form__fieldset--contacts">
+              <div class="form__text form__text--tel">
+                <label for="phone" class="form__legend form__legend--tel">Тел</label>
+                <div class="form__input-icon">
+                  <input class="form__input-text form__input-text--tel" type="tel" id="phone" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+                  <svg class="form__icon" width="25" height="24" >
+                    <use xlink:href="#icon-phone"></use>
+                  </svg>
+                </div>
               </div>
-            </p>
-          </fieldset>
-          <fieldset class="form__fieldset form__fieldset--email">
-            <legend class="form__legend form__legend--email">E-mail</legend>
-            <p class="form__text form__text--email">
-              <label for="email" class="visually-hidden">Электронная почта</label>
-              <div class="form__input-icon">
-                <input class="form__input-text form__input-text--email" type="email" id="email" name="email" placeholder="Ваш Email*" required>
-                <svg class="form__icon" width="32" height="32" >
-                  <use xlink:href="#icon-mail"></use>
-                </svg>
+              <div class="form__text form__text--email">
+                <label for="email" class="form__legend form__legend--email">E-mail</label>
+                <div class="form__input-icon">
+                  <input class="form__input-text form__input-text--email" type="email" id="email" name="email" placeholder="Ваш Email*" required>
+                  <svg class="form__icon" width="32" height="32">
+                    <use xlink:href="#icon-mail"></use>
+                  </svg>
+                </div>
               </div>
-            </p>
-          </fieldset>
+            </fieldset>
           </div>
-          <fieldset class="form__fieldset form__fieldset--more">
-            <legend class="form__legend form__legend--more">Доп</legend>
-            <p class="form__text form__text--textarea">
-              <label for="comment" class="visually-hidden">Дополнительно</label>
-              <textarea class="form__textarea" id="comment" name="comment" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-            </p>
-          </fieldset>
+
+          <p class="form__textarea-container">
+            <label for="comment" class="form__legend form__legend--more">Доп</label>
+            <textarea class="form__textarea" id="comment" name="comment" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </p>
+
           <div class="form__bottom">
             <p class="form__note">*Поля обязательны для заполнения</p>
             <button class="button form__button" type="submit">Отправить заказ</button>
