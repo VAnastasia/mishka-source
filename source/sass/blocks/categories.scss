@@ -6,7 +6,9 @@
 .categories__item {
   position: relative;
   margin: 0 auto;
-  max-width: 320px;
+  //max-width: 320px;
+  width: 100%;
+  box-sizing: border-box;
 
   &:hover {
     top: -5px;
@@ -69,11 +71,9 @@
 
 .categories__text {
   display: block;
-  width: 290px;
-  padding: 0;
-  padding-left: 30px;
-  padding-top: 26px;
-  padding-bottom: 30px;
+  width: 100%;
+  padding: 26px 0 30px 30px;
+  box-sizing: border-box;
 
   @include font-bold;
   @include font(19px, 24px, $color-white);
