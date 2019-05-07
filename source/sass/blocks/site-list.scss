@@ -25,17 +25,21 @@
 
 @media (min-width: $width-tablet) {
   .site-list {
-    position: absolute;
-    bottom: -60px;
-    left: 0;
+    //position: absolute;
+    //bottom: -60px;
+    //left: 0;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding-left: 50px;
-    padding-right: 50px;
-    height: 0;
-    min-height: 60px;
-    width: 380px;
+    padding: 18px 50px;
+    //height: 0;
+    //min-height: 60px;
+    //width: 380px;
+    order: 3;
+    width: 60%;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    box-shadow: 0 -1px 0 $color-grey-light;
   }
 
   .site-list__link {
@@ -49,9 +53,11 @@
 @media (min-width: $width-desktop) {
   .site-list {
     width: auto;
-    height: auto;
-    position: static;
     padding: 0;
+    padding-left: calc(50% - 560px);
+    order: 1;
+    background-color: $color-white;
+    box-shadow: none;
   }
 
   .site-list__item:first-child {

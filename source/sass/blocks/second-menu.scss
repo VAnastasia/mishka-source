@@ -19,7 +19,8 @@
     @include font(15px, 24px, $color-black);
     text-decoration: none;
 
-    &[href]:hover {
+    &[href]:hover,
+    &[href]:focus {
       color: rgba($color: $color-black, $alpha: 0.6);
     }
 

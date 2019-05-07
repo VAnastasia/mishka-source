@@ -8,7 +8,7 @@
 }
 
 .order__intro {
-  max-width: 320px;
+  max-width: $width-mobile;
   margin: 0 auto;
   margin-bottom: 15px;
   padding: 9px 30px 7px 30px;
@@ -41,7 +41,7 @@
 
   .order__intro {
     margin-bottom: 0;
-    max-width: 768px;
+    max-width: $width-tablet;
     padding: 50px;
     padding-bottom: 20px;
     font-size: 17px;
