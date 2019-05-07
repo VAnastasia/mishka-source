@@ -12,10 +12,6 @@
     background-color: #f9f9f9;
     box-shadow: none;
     width: 100%;
-
-    * {
-      box-shadow: 0 0 0 1px red;
-    }
   }
 
   .page-header--inner {
@@ -43,14 +39,20 @@
 
 @media (min-width: $width-desktop) {
   .page-header__container {
+    margin: 0 auto;
     display: flex;
-    //justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
-    padding-left: calc(50% - 575px);
-    padding-right: calc(50% - 575px);
+    //max-width: $width-desktop;
+    //padding-left: calc(50% - 575px);
+    //padding-right: calc(50% - 575px);
   }
 
   .page-header__text {
-    margin-left: auto;
+    width: 30%;
+    max-width: 350px;
+    flex-grow: 0;
+    box-sizing: border-box;
   }
 }

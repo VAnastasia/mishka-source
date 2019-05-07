@@ -4,10 +4,14 @@
 
 @media (min-width: $width-desktop) {
   .second-menu {
-    display: flex;
-
     @include list-reset;
-    padding: 18px 0 18px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    max-width: 800px;
+    box-sizing: border-box;
+    flex-grow: 0;
+    padding: 0 0 0 50px;
   }
 
   .second-menu__item {
@@ -17,7 +21,9 @@
   .second-menu__link {
     @include font-bold;
     @include font(15px, 24px, $color-black);
+    display: block;
     text-decoration: none;
+    padding: 18px 0;
 
     &[href]:hover,
     &[href]:focus {
