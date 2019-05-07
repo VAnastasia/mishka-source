@@ -125,6 +125,7 @@
     justify-content: center;
     //max-width: $width-desktop;
     box-shadow: 0 1px 0 $color-grey-light;
+    overflow-x: hidden;
   }
 
   /*.main-nav__container {

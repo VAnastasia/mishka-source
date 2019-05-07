@@ -141,6 +141,10 @@
       order: 6;
     }
   }
+
+  .advantages__item--gift::before {
+    top: -2px;
+  }
 }
 
 @media (min-width: $width-desktop) {

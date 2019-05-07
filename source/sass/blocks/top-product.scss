@@ -7,13 +7,13 @@
   &::after {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -5px;
     left: 0;
     width: 100%;
     max-width: 320px;
-    height: 6px;
+    height: 10px;
     background-image: url("../img/bg-zigzag-line.svg");
-    background-position: 10px center;
+    background-position: 7px center;
     background-repeat: repeat-x;
     background-size: contain;
   }
@@ -86,7 +86,7 @@
     &::after {
       height: 17px;
       max-width: 778px;
-      background-position: 25px center;
+      background-position: 20px center;
     }
   }
 
@@ -127,7 +127,7 @@
   .top-product__image {
     position: absolute;
     right: 50px;
-    bottom: 65px;
+    top: 150px;
     margin: 0;
     width: 333px;
     height: 404px;
@@ -163,7 +163,7 @@
 
   .top-product__image {
     right: 50px;
-    bottom: 90px;
+    top: 70px;
     width: 525px;
     height: 636px;
   }

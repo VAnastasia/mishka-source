@@ -6,7 +6,6 @@
 .categories__item {
   position: relative;
   margin: 0 auto;
-  //max-width: 320px;
   width: 100%;
   box-sizing: border-box;
 
@@ -72,14 +71,15 @@
 .categories__text {
   display: block;
   width: 100%;
-  padding: 26px 0 30px 30px;
+  padding: 26px 100px 30px 30px;
   box-sizing: border-box;
 
   @include font-bold;
   @include font(19px, 24px, $color-white);
   text-decoration: none;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: rgba($color: $color-white, $alpha: 0.6);
   }
 
@@ -111,8 +111,8 @@
 
   .categories__text {
     display: block;
-    width: 300px;
-    padding: 28px 0 35px 35px;
+    width: 334px;
+    padding: 28px 100px 35px 35px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -128,6 +128,6 @@
   }
 
   .categories__text {
-    width: 490px;
+    width: 525px;
   }
 }

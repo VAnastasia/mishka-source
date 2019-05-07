@@ -6,13 +6,13 @@
   &::after {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -5px;
     left: 0;
     width: 100%;
     max-width: 320px;
-    height: 6px;
+    height: 10px;
     background-image: url("../img/bg-zigzag-line.svg");
-    background-position: 10px center;
+    background-position: 7px center;
     background-repeat: repeat-x;
     background-size: contain;
   }
@@ -108,13 +108,14 @@
 
 @media (min-width: $width-desktop) {
   .reviews {
-    padding: 67px 50px 160px 225px;
+    padding: 67px 50px 150px 225px;
     background-position: left 50px top;
 
     &::after {
       height: 23px;
       max-width: 1050px;
       left: 50px;
+      z-index: 2;
     }
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -140,7 +141,7 @@
 
   .reviews__toggles {
     position: absolute;
-    bottom: 155px;
+    bottom: 145px;
     right: 50px;
   }
 }

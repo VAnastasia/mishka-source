@@ -59,7 +59,9 @@
     &::after {
       bottom: -14px;
       width: 100%;
-      height: 38px;
+      height: 37px;
+      background-position: center;
+      background-size: 1250px 37px;
     }
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
