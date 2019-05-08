@@ -7,12 +7,16 @@
 }
 
 .social__list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 140px;
-
   @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.social__item {
+  padding: 0 20px;
 }
 
 .social__icon {
@@ -32,6 +36,5 @@
     padding: 0;
     padding-top: 10px;
     border: none;
-    width: 150px;
   }
 }

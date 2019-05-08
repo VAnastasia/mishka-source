@@ -36,6 +36,10 @@
     box-shadow: 0 -1px 0 $color-grey-light;
   }
 
+  .site-list--inner {
+    background-color: #f1f1f1;
+  }
+
   .site-list__link {
     padding: 18px 0;
     margin-right: 35px;
@@ -52,6 +56,10 @@
     justify-content: flex-start;
     order: 1;
     box-shadow: none;
+  }
+
+  .site-list--inner {
+    background-color: #f9f9f9;
   }
 
   .site-list__item:nth-child(2n+1) {

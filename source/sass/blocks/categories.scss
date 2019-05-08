@@ -90,14 +90,15 @@
 
 @media (min-width: $width-tablet) {
   .categories {
-    width: 668px;
+    width: 100%;
     position: relative;
     display: flex;
     justify-content: center;
   }
 
   .categories__item {
-    max-width: 334px;
+    width: 50%;
+    max-width: 50%;
   }
 
   .categories__item--interior::after {
