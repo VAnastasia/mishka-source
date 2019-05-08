@@ -56,7 +56,7 @@
     flex-wrap: wrap;
     justify-content: flex-end;
     order: 2;
-    max-width: 501px;
+    max-width: 500px;
   }
 
   .user-list__cart {
@@ -91,14 +91,14 @@
 
 @media (min-width: $width-desktop) {
   .user-list {
-    width: 43%;
-    //max-width: 500px;
+    width: 486px;
+    max-width: 486px;
     box-sizing: border-box;
     justify-content: flex-end;
-    //padding-right: calc(50% - 575px);
   }
 
   .user-list__cart {
     padding-left: 84px;
+    padding-right: 35px;
   }
 }

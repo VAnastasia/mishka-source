@@ -25,16 +25,10 @@
 
 @media (min-width: $width-tablet) {
   .site-list {
-    //position: absolute;
-    //bottom: -60px;
-    //left: 0;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     padding: 0 50px;
-    //height: 0;
-    //min-height: 60px;
-    //width: 380px;
     order: 3;
     width: 60%;
     box-sizing: border-box;
@@ -52,15 +46,11 @@
 
 @media (min-width: $width-desktop) {
   .site-list {
-    width: 43%;
-    max-width: 501px;
+    width: 486px;
     box-sizing: border-box;
     padding: 0;
-    padding-left: 15px;
     justify-content: flex-start;
-    //padding-left: calc(50% - 560px);
     order: 1;
-    background-color: $color-white;
     box-shadow: none;
   }
 

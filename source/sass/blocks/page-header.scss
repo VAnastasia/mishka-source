@@ -44,15 +44,12 @@
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    //max-width: $width-desktop;
-    //padding-left: calc(50% - 575px);
-    //padding-right: calc(50% - 575px);
   }
 
   .page-header__text {
-    width: 30%;
-    max-width: 350px;
+    width: 300px;
     flex-grow: 0;
     box-sizing: border-box;
+    padding-right: 0;
   }
 }
