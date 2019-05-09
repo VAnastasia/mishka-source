@@ -59,6 +59,11 @@
   .catalog__title {
     padding-top: 35px;
     padding-bottom: 105px;
+
+    &::after {
+      bottom: -12px;
+      height: 34px;
+    }
   }
 
   .catalog__wrapper {

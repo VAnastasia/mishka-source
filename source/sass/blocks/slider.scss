@@ -1,7 +1,7 @@
 .slider__toggles {
   display: flex;
   margin: 0 auto;
-  margin-bottom: 38px;
+  padding-bottom: 38px;
 }
 
 .slider__toggle {
@@ -39,6 +39,10 @@
 }
 
 @media (min-width: $width-tablet) {
+  .slider__toggles {
+    padding-bottom: 0;
+  }
+
   .slider__toggle {
     width: 88px;
     border: none;

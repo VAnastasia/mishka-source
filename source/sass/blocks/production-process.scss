@@ -7,7 +7,8 @@
   background-color: $color-white;
   border: 1px solid $color-grey-light;
 
-  &:hover {
+  &:hover,
+  &:focus {
     box-shadow: 0 6px 10px rgba($color: $color-black, $alpha: 0.1);
   }
 

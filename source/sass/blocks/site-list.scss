@@ -56,10 +56,11 @@
     justify-content: flex-start;
     order: 1;
     box-shadow: none;
+    background-color: $color-white;
   }
 
   .site-list--inner {
-    background-color: #f9f9f9;
+    background-color: $color-white;
   }
 
   .site-list__item:nth-child(2n+1) {

@@ -3,10 +3,6 @@
   box-shadow: 0 1px 0 $color-grey-light;
 }
 
-.page-header__text {
-  display: none;
-}
-
 @media (min-width: $width-tablet) {
   .page-header {
     background-color: #f9f9f9;
@@ -16,44 +12,5 @@
 
   .page-header--inner {
     background-color: #f1f1f1;
-  }
-
-  .page-header__container {
-    order: 4;
-    width: 40%;
-    background-color: #f9f9f9;
-    box-shadow: 0 -1px 0 $color-grey-light;
-  }
-
-  .page-header__container--inner {
-    background-color: #f1f1f1;
-  }
-
-  .page-header__text {
-    display: block;
-    margin: 0;
-    padding: 18px 0;
-    padding-right: 50px;
-
-    @include font-regular;
-    @include font(15px, 24px, $color-grey-dark);
-    text-align: right;
-  }
-}
-
-@media (min-width: $width-desktop) {
-  .page-header__container {
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .page-header__text {
-    width: 300px;
-    flex-grow: 0;
-    box-sizing: border-box;
-    padding-right: 0;
   }
 }

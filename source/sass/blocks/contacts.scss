@@ -42,9 +42,19 @@
 }
 
 .contacts__email {
+  position: relative;
   color: $color-grey-dark;
   text-decoration: none;
-  border-bottom: 1px solid #46c1ae;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #46c1ae;
+  }
 
   &:hover,
   &:focus {
@@ -53,6 +63,10 @@
 
   &:active {
     color: rgba($color: #46c1ae, $alpha: 0.3);
+  }
+
+  &:active::after {
+    background-color: rgba($color: #46c1ae, $alpha: 0.3);
   }
 }
 
@@ -99,7 +113,7 @@
 @media (min-width: $width-tablet) {
   .contacts {
     padding-top: 62px;
-    padding-bottom: 55px;
+    padding-bottom: 57px;
   }
 
   .contacts__container {
