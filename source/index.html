@@ -120,19 +120,33 @@
         <div class="reviews__wrapper slider">
           <h2 class="reviews__title">Отзывы</h2>
           <div class="reviews__list slider__list">
-            <blockquote class="reviews__item">
+            <blockquote class="reviews__item slider__slide">
             Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
               <cite class="reviews__author-name">Анастасия&nbsp;Красильникова</cite>
               <a class="reviews__author-link" href="#">@misssssiskras</a>
             </blockquote>
+            <blockquote class="reviews__item slider__slide">
+              Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек.
+              В отчаянии, я накупила аксессуаров в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше
+              лайков!
+              <cite class="reviews__author-name">Мария&nbsp;Красильникова</cite>
+              <a class="reviews__author-link" href="#">@misssssiskras</a>
+            </blockquote>
+            <blockquote class="reviews__item slider__slide">
+              Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек.
+              В отчаянии, я накупила аксессуаров в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше
+              лайков!
+              <cite class="reviews__author-name">Александра&nbsp;Красильникова</cite>
+              <a class="reviews__author-link" href="#">@misssssiskras</a>
+            </blockquote>
           </div>
           <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--left" type="button">
+            <a class="slider__toggle slider__toggle--left" onclick="minusSlide()">
               <span class="visually-hidden">Назад</span>
-            </button>
-            <button class="slider__toggle slider__toggle--right" type="button">
+            </a>
+            <a class="slider__toggle slider__toggle--right" onclick="plusSlide()">
               <span class="visually-hidden">Вперед</span>
-            </button>
+            </a>
           </p>
           <a href="review.html" class="button reviews__write">Написать</a>
         </div>
@@ -243,5 +257,6 @@
     <script src="js/picturefill.min.js" defer></script>
     <script src="js/menu-mobile.min.js"></script>
     <script src="js/modal-index.min.js"></script>
+    <script src="js/slider.min.js"></script>
   </body>
 </html>
